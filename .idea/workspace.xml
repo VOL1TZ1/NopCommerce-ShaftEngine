@@ -5,10 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="New Project V1.0">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/Buy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Login_Register/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Navigate/Navigate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SocialMedia/Social.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/05fe0a4d-febb-474f-bce4-2b46153fefa8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0627b6f2-a5d9-4b20-bcd3-a284f0cc3f75-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/09efaa16-0933-432f-a6b4-7c5f01b3ea91-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5ea2e60e-266a-47d3-9d1e-c0b40cc1e04e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ae8b2bcf-ce77-4f5f-bbde-23be46b36c5c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e0d61175-c090-4ec1-bb07-ed2066c0b4c5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f9bba34d-ef7b-4726-9b93-b87df0256841-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generate_allure_report.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/TestNG.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/cucumber.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/customWebdriverCapabilities.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/TestNG.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/cucumber.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/customWebdriverCapabilities.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductGuestUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductRegisteredUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/ModifyItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/META-INF/services/org.testng.ITestNGListener" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testDataFiles/userInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BuyProducts/Buy.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,46 +43,81 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "VOL1TZ1"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;VOL1TZ1&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/VOL1TZ1/NopCommerce-ShaftEngine.git",
-    "accountId": "d56ef2f2-bd50-4f0a-a68f-82e0e05cca98"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VOL1TZ1/NopCommerce-ShaftEngine.git&quot;,
+    &quot;accountId&quot;: &quot;d56ef2f2-bd50-4f0a-a68f-82e0e05cca98&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2gEvGtWuIKSLAl8axLShImdtnS6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "TestNG.Buy.executor": "Run",
+    "TestNG.BuyProductGuestUser.executor": "Run",
+    "git-widget-placeholder": "BuyProduct",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Elmaadawy/IdeaProjects/NopCommerceShaft",
+    "last_opened_file_path": "D:/JDK/project/NopCommerce-ShaftEngine/src/test/resources/testDataFiles",
     "onboarding.tips.debug.path": "C:/Users/Elmaadawy/IdeaProjects/NopCommerceShaft/src/main/java/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Elmaadawy\IdeaProjects\NopCommerceShaft" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JDK\project\NopCommerce-ShaftEngine\src\test\resources\testDataFiles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -93,8 +148,20 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="New Project" />
     <MESSAGE value="New Project V1.0" />
     <option name="LAST_COMMIT_MESSAGE" value="New Project V1.0" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductGuestUser.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
