@@ -1,4 +1,13 @@
 {
+  "First_NameReg" : "John",
+  "Last_NameReg" : "Butler",
+  "Gender" : "Male",
+  "DoB_Day" :  20,
+  "DoB_Month" : 4,
+  "DoB_Year" : 1990,
+  "EmailReg" : "mtaher1@gmail.com",
+  "CompanyReg" : "Sprints",
+  "Password" : "123456",
   "First_Name" : "Mohamed",
   "Last_Name" : "El-Taher",
   "Email" : "johnbutler2@gmail.com",
