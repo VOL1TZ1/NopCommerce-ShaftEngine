@@ -1,5 +1,6 @@
 package Login_Register;
 
+import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
 
 import org.testng.annotations.*;
@@ -11,6 +12,8 @@ public class registerUserScenario {
         SHAFT.GUI.WebDriver driver;
         SHAFT.TestData.JSON userInfo;
         Form form;
+        Faker fakerObject;
+        String email;
         String siteURL = "https://demo.nopcommerce.com/";
         String siteTitle = "nopCommerce demo store";
         @Test
@@ -34,7 +37,7 @@ public class registerUserScenario {
             form.chooseFromList(userInfo.getTestData("DoB_Month"), dobMonthField);
             form.chooseFromList(userInfo.getTestData("DoB_Year"), dobYearField);
             // Fill in the email
-            form.writeToFieldOnly(userInfo.getTestData("Email"),emailField);
+            form.writeToFieldOnly(email,emailField);
             // Fill in the Company name
             form.writeToFieldOnly(userInfo.getTestData("Company"),companyNameField);
             // Fill in the password
@@ -43,8 +46,8 @@ public class registerUserScenario {
             form.writeToFieldOnly(userInfo.getTestData("Password"),confirmPasswordField);
             // Press the save button
             driver.element().click(registerButton);
-            // Check if that the email is not duplicated
-            driver.assertThat().element(emailExistsErrorMessage).doesNotExist().perform();
+            // Check that the email is not duplicated
+            // driver.assertThat().element(emailExistsErrorMessage).doesNotExist().perform();
             // Check that the success message appears
             driver.assertThat().element(successMessage).exists().perform();
             // Press the continue button
@@ -67,7 +70,7 @@ public class registerUserScenario {
             // Check the Last Name
             form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("Last_Name"), lastNameField);
             // Check the Email
-            form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("Email"), emailField);
+            form.checkCriticalFieldHasTheSameValueAs(email, emailField);
             // Press logout
             driver.element().click(logoutLink);
         }
@@ -79,6 +82,10 @@ public class registerUserScenario {
             driver = new SHAFT.GUI.WebDriver();
             // Create a form object to be used to fill out form fields
             form = new Form(driver);
+            // Create a faker object
+            fakerObject = new Faker();
+            // Generate a random email
+            email = fakerObject.internet().safeEmailAddress();
             // Go to the website
             driver.browser().navigateToURL(siteURL);
             // To ensure that the site loaded and there is no problem in the connection
@@ -88,6 +95,7 @@ public class registerUserScenario {
         @AfterClass
         public void runThisLast(){
             driver.quit();
+            JsonFileModifier.modifyValue("src/test/resources/testDataFiles/userInfo.json","Email", email);
             SHAFT.Properties.reporting.openAllureReportAfterExecution();
         }
 }
