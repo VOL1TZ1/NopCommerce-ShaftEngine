@@ -103,7 +103,7 @@ public class BuyProductGuestUser {
     }
     @AfterMethod
     public void RunThisLast(){
-       // driver.quit();
+        driver.quit();
         SHAFT.Properties.reporting.openAllureReportAfterExecution();
     }
 }

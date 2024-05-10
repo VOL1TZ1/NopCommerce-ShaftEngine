@@ -55,6 +55,13 @@ public class BuyProductRegisteredUser {
     By ContinueButton = By.xpath("(//button[contains(@class, 'new-address-next-step-button')])[1]");
 
     By ContinueShipping = By.xpath("//button[contains(@class, 'shipping-method-next-step-button')]");
+    By CreditCard = By.id("paymentmethod_1");
+    By CardHolderName = By.id("CardholderName");
+    By CardNumber = By.id("CardNumber");
+    By ExpireMonth = By.id("ExpireMonth");
+    By ExpireYear = By.id("ExpireYear");
+    By CardCode = By.id("CardCode");
+
     By ContinuePayment = By.xpath("//button[contains(@class, 'payment-method-next-step-button')]");
     By ContinueInformation = By.xpath("//button[contains(@class, 'payment-info-next-step-button')]");
     By ConfirmOrder = By.xpath("//button[contains(@class, 'confirm-order-next-step-button')]");
@@ -101,12 +108,12 @@ public class BuyProductRegisteredUser {
         driver.element().type(passwordField, userInfo.getTestData("Password"));
 
         // Fill in the confirmation password
-        driver.element().type(confirmPasswordField, userInfo.getTestData("Password"))
-                .keyPress(confirmPasswordField, Keys.ENTER);
+        driver.element().type(confirmPasswordField, userInfo.getTestData("Password"));
 
 
-        // driver.element().click(RegisterButton);
+        driver.element().click(registerButton);
         driver.verifyThat().element(SuccessMessage1).exists().perform();
+
         driver.element().click(FinishReg);
         driver.element().click(AgreeTerms);
         driver.element().click(CheckOut);
@@ -136,7 +143,15 @@ public class BuyProductRegisteredUser {
 
         driver.element().click(ContinueButton);
         driver.element().click(ContinueShipping);
+
+        driver.element().click(CreditCard);
+        driver.element().click(CreditCard);
         driver.element().click(ContinuePayment);
+        driver.element().type(CardHolderName, userInfo.getTestData("CardHolderName"));
+        driver.element().type(CardNumber, userInfo.getTestData("CardNumber"));
+        driver.element().select(ExpireMonth, userInfo.getTestData("Exp_Month"));
+        driver.element().select(ExpireYear, userInfo.getTestData("Exp_Year"));
+        driver.element().type(CardCode, userInfo.getTestData("CardCode"));
         driver.element().click(ContinueInformation);
         driver.element().click(ConfirmOrder);
         driver.verifyThat().element(SuccessMessage).exists().perform();
@@ -157,7 +172,7 @@ public class BuyProductRegisteredUser {
     }
     @AfterMethod
     public void RunThisLast(){
-        // driver.quit();
+         driver.quit();
         SHAFT.Properties.reporting.openAllureReportAfterExecution();
     }
 }
