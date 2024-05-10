@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 import java.util.Objects;
 
 import static Login_Register.Locators.*;
-public class Register_User_Scenario {
+public class registerUserScenario {
         SHAFT.GUI.WebDriver driver;
         SHAFT.TestData.JSON userInfo;
         Form form;
@@ -44,7 +44,7 @@ public class Register_User_Scenario {
             // Press the save button
             driver.element().click(registerButton);
             // Check if that the email is not duplicated
-            //driver.assertThat().element(emailExistsErrorMessage).doesNotExist().perform();
+            driver.assertThat().element(emailExistsErrorMessage).doesNotExist().perform();
             // Check that the success message appears
             driver.assertThat().element(successMessage).exists().perform();
             // Press the continue button

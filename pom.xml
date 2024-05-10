@@ -137,7 +137,7 @@
                             <useFile>false</useFile>
                             <encoding>UTF-8</encoding>
                             <argLine>
-                                -javaagent:${user.home}/.m2/repository/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar
+                                -javaagent:"${user.home}/.m2/repository/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
                             </argLine>
                             <properties>
                                 <property>

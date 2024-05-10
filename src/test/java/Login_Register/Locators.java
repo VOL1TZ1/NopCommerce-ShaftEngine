@@ -3,6 +3,9 @@ package Login_Register;
 import org.openqa.selenium.By;
 
 public class Locators {
+    /**
+     * Registration Scenario Locators
+     * **/
     static By registerLink = By.linkText("Register");
     static By continueButton = By.xpath("//*[contains(@class, 'register-continue-button')]");
     static By myAccount = By.cssSelector("a[class = ico-account]");
@@ -21,4 +24,9 @@ public class Locators {
     static By registerButton = By.name("register-button");
     static By successMessage = By.xpath("//*[contains(text(), 'registration completed')]");
     static By emailExistsErrorMessage = By.xpath("//*[contains(text(), 'email already exists')]");
+    /**
+     * Login Scenario Locators
+     * **/
+    static By loginLink = By.cssSelector("a[class = ico-login]");
+    static By loginButton = By.xpath("//*[contains(@class, 'login-button')]");
 }

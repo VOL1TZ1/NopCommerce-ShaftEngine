@@ -42,7 +42,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket62296 @w@C:\Users\AHMEDE~1\AppData\Local\Temp\idea_working_dirs_testng.tmp -temp C:\Users\AHMEDE~1\AppData\Local\Temp\idea_testng.tmp</value>
+    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket54400 @w@C:\Users\AHMEDE~1\AppData\Local\Temp\idea_working_dirs_testng.tmp -temp C:\Users\AHMEDE~1\AppData\Local\Temp\idea_testng.tmp</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -126,7 +126,7 @@
   </parameter>
   <parameter>
     <key>java.library.path</key>
-    <value>C:\Users\Ahmed ElSayed\.jdks\openjdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;E:\Programs\WinAVR\bin;E:\Programs\WinAVR\utils\bin;E:\Programs\PuTTY\;E;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;G:\Utilities\NASM;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\System32;E:\Programs\Git\cmd;%MAVEN_HOME%\bin;C:\Users\Ahmed ElSayed\AppData\Local\Microsoft\WindowsApps;C:\Users\Ahmed ElSayed\AppData\Local\atom\bin;E:\Programs\MSYS2\mingw64\bin;E:\Programs\Microsoft VS Code\bin;C:\Users\Ahmed ElSayed\AppData\Local\GitHubDesktop\bin;E:\Programs\IntelliJ IDEA Community Edition 2023.3.5\bin;;;.</value>
+    <value>C:\Users\Ahmed ElSayed\.jdks\openjdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;E:\Programs\WinAVR\bin;E:\Programs\WinAVR\utils\bin;E:\Programs\PuTTY\;E;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;G:\Utilities\NASM;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\System32;E:\Programs\Git\cmd;D:\Courses\Sprints\Front_End_Testing\apache-maven-3.9.6\bin;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Users\Ahmed ElSayed\AppData\Local\Microsoft\WindowsApps;C:\Users\Ahmed ElSayed\AppData\Local\atom\bin;E:\Programs\MSYS2\mingw64\bin;E:\Programs\Microsoft VS Code\bin;C:\Users\Ahmed ElSayed\AppData\Local\GitHubDesktop\bin;E:\Programs\IntelliJ IDEA Community Edition 2023.3.5\bin;;;.</value>
   </parameter>
   <parameter>
     <key>CUCUMBER_PUBLISH_ENABLED</key>
