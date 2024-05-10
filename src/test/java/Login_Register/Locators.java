@@ -29,4 +29,9 @@ public class Locators {
      * **/
     static By loginLink = By.cssSelector("a[class = ico-login]");
     static By loginButton = By.xpath("//*[contains(@class, 'login-button')]");
+    /**
+     * Modify User Info Scenario Locators
+     * **/
+    static By saveButton = By.id("save-info-button");
+    static By validationError = By.className("validation-summary-errors");
 }
