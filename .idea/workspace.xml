@@ -4,14 +4,76 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="New Project V1.0">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Login_Register/Form.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Login_Register/Locators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Login_Register/Register_User_Scenario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testDataFiles/userInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="* Added a validation phase where the script validates the data entered during registration in the account info section">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1481aae0-aa28-4ea9-af71-c601fff0dfbb-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/188b430f-578d-423d-bf84-768993afaeac-attachment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/23716c5c-79ca-41b7-9b27-afa2c198989c-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/32e9ae8a-e371-4055-bcd2-bfc16360951e-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/39fe6694-8419-45d4-a658-2a9986a9311b-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4aedf3bf-e37d-4821-9b29-dfe40af56255-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4c5b1b51-b3c0-4108-97fb-6abc0b685d71-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5ed4cc1d-f6ad-4c56-b542-4663b8e337fb-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/657c564e-cd42-478a-8b7d-b9fc4ca54d22-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7346286f-1cb3-4b16-972c-ec7bb4ec8fbb-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8bc63e11-752c-489e-aa26-411d03ae6979-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8d87647a-0c1a-42bd-ab96-2883200a32ce-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8f962d69-0c2b-4e06-8d87-e0f4ad54f1c5-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/967e6b01-bd42-4a90-b213-80c7fde2ae97-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/99424ca2-67b6-4300-acb7-9406323fcf64-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a1faa98c-cfb8-4901-bbef-a55875a58089-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b1871525-26c9-4e92-a40e-96d0ea2a22f3-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b79e96ac-0e58-4829-8ed6-c677101fde54-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/be5d01f6-82c1-4521-9742-b89e91b7bf7c-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c71cde2a-1ac1-4924-9c54-6d67dd263dc5-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d678817a-16be-400f-a947-f30b796eb3c3-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/df3d8601-9a10-405e-8f6a-ae1a45dd864b-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e2181bbf-b3dd-48ee-a523-82ca280195bb-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f5b6ae94-36b4-42e1-bd31-ae23c94abded-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f6f49cf5-def5-4fd9-9742-32f28c0c5c3e-attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f82769c2-1f9c-4cc7-8f8a-1ce69e88a982-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Login_Register/LoginScenario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0d6855da-b9aa-4e5e-8364-81128fefcecc-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/10d8b6ef-dc13-479e-8c2e-d8de9760f29b-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/11f57ae7-8605-4fe7-b71b-ab23765292f8-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/23e4db9d-264e-4098-afdf-fd3a90f18cfb-attachment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/27868789-4fdb-4687-b4f5-3210bf7e2211-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2c1e56c1-91cf-45da-92c9-71f80b3a5aa9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/308c8509-44db-4180-84b0-65722a2396f4-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/32112636-e863-4529-9f2c-366a29e054aa-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3df77707-4724-496f-9d53-a32add75d6cf-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/44856ed7-5ce6-491b-b36d-e245e5cc83fa-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/45ca1937-23a6-4922-8b7d-5e268b7afbf2-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/45e8b8df-32a5-4448-a282-16729503d46f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/48bbc588-4b12-47fe-9cf8-46a7b557ad0d-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4a24731e-809e-44da-8399-f89adf8dd475-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4c63a464-26a3-4746-a4f8-9ac15e6ac287-attachment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4e81324a-c098-4c86-a0ed-6fa3927c4fd2-attachment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4f9060f8-5343-41c1-8a5b-42446baac6a6-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/576a7a99-4703-4827-8beb-4f92ed0ad0cc-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/637fd9c9-0a7f-468f-b349-9efd4df747ae-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/72879396-b403-4aa9-9c12-aebc1f726c23-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/738bcd21-0318-4aff-bd2e-e918e9084d32-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/78c6f5ed-7eba-49ec-b38b-727905b67e78-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/87361bd6-7bcc-4a47-8928-9842e4fdcf77-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/919b78a6-3e7c-4b43-9ec1-4dc51cdb500e-attachment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/93fbb7c6-a3c4-4189-9288-01e156ffc1d3-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/960824ed-94cc-42ed-a7b3-89115529bcee-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9a79c43c-9d23-4323-9786-fd4862843c01-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a1e24416-c772-46da-a861-526a42740b4f-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b52ed9ad-15eb-4c44-8fc0-1edff6b4bfeb-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b7dc6345-ecff-425f-b098-d25bb7e9d8bd-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/bb9bf068-c44b-4dc0-8003-7ccdd6207c04-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/bd23031b-6ad3-4ee6-a488-2843adad8111-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cb54f3ab-ac33-4682-8d68-5bc9891969f5-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cf259ba8-7f3f-4f96-817c-6ed82360c3bb-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/environment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/environment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/execution-summary/ExecutionSummaryReport_10-05-2024_11-38-47-0610-AM.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login_Register/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login_Register/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login_Register/Register_User_Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login_Register/registerUserScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testDataFiles/userInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testDataFiles/userInfo.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +114,11 @@
         </map>
       </branch-storage>
     </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -79,10 +146,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven.NopCommerce-ShaftEngine [clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.LoginScenario.executor": "Run",
+    "TestNG.LoginScenario.loginUser.executor": "Run",
     "TestNG.Register_User_Scenario.executor": "Run",
-    "git-widget-placeholder": "master",
+    "TestNG.registerUserScenario.executor": "Run",
+    "git-widget-placeholder": "Login",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Courses/Sprints/Front_End_Testing/Tasks/NopCommerce-ShaftEngine",
@@ -90,7 +163,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -98,9 +171,9 @@
       <recent name="C:\Users\Elmaadawy\IdeaProjects\NopCommerceShaft" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Register_User_Scenario" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Ecommerce_Automation_Testing" />
+  <component name="RunManager" selected="TestNG.LoginScenario.loginUser">
+    <configuration name="LoginScenario" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NopCommerce-ShaftEngine" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Login_Register.*" />
@@ -108,7 +181,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Login_Register" />
-      <option name="MAIN_CLASS_NAME" value="Login_Register.Register_User_Scenario" />
+      <option name="MAIN_CLASS_NAME" value="Login_Register.LoginScenario" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -116,9 +189,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginScenario.loginUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NopCommerce-ShaftEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login_Register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Login_Register" />
+      <option name="MAIN_CLASS_NAME" value="Login_Register.LoginScenario" />
+      <option name="METHOD_NAME" value="loginUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="registerUserScenario" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NopCommerce-ShaftEngine" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login_Register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Login_Register" />
+      <option name="MAIN_CLASS_NAME" value="Login_Register.registerUserScenario" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <envs>
+        <env name="HOMEPATH" value="\Users\Ahmed\ ElSayed" />
+      </envs>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.LoginScenario" />
+      <item itemvalue="TestNG.LoginScenario.loginUser" />
+      <item itemvalue="TestNG.registerUserScenario" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Register_User_Scenario" />
+        <item itemvalue="TestNG.LoginScenario.loginUser" />
+        <item itemvalue="TestNG.registerUserScenario" />
+        <item itemvalue="TestNG.LoginScenario" />
       </list>
     </recent_temporary>
   </component>
@@ -154,12 +282,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715276051541</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="* Added a validation phase where the script validates the data entered during registration in the account info section">
+      <option name="closed" value="true" />
+      <created>1715330709009</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715330709009</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:io.cucumber:cucumber-java" />
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:io.grpc:grpc-api" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:javax.ws.rs:javax.ws.rs-api" />
+    <option featureType="dependencySupport" implementationName="java:io.qameta.allure:allure-java-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="New Project" />
     <MESSAGE value="New Project V1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Project V1.0" />
+    <MESSAGE value="* Added a validation phase where the script validates the data entered during registration in the account info section" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added a validation phase where the script validates the data entered during registration in the account info section" />
   </component>
 </project>
