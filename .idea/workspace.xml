@@ -4,31 +4,84 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="New Project V1.0">
-      <change afterPath="$PROJECT_DIR$/allure-results/05fe0a4d-febb-474f-bce4-2b46153fefa8-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0627b6f2-a5d9-4b20-bcd3-a284f0cc3f75-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/09efaa16-0933-432f-a6b4-7c5f01b3ea91-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/5ea2e60e-266a-47d3-9d1e-c0b40cc1e04e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ae8b2bcf-ce77-4f5f-bbde-23be46b36c5c-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e0d61175-c090-4ec1-bb07-ed2066c0b4c5-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f9bba34d-ef7b-4726-9b93-b87df0256841-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate_allure_report.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/TestNG.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/cucumber.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/customWebdriverCapabilities.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/TestNG.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/cucumber.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/customWebdriverCapabilities.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/default/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductGuestUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductRegisteredUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/ModifyItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/META-INF/services/org.testng.ITestNGListener" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testDataFiles/userInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="Buy As Guest and Register V2.0">
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_09-48-27-029_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_09-49-43-623_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_10-07-54-446_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_10-17-50-881_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_10-21-06-465_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_10-24-03-939_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_10-28-31-944_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_10-29-17-245_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_10-31-59-822_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_10-32-48-143_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_11-01-45-671_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_11-06-17-944_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_11-13-31-220_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_12-06-51-381_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_12-12-29-557_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_12-15-35-160_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_12-27-23-589_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_12-33-09-973_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_12-38-12-062_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_12-46-54-274_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_12-52-34-313_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_12-59-40-040_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_13-03-02-828_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_13-05-27-572_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_14-40-18-314_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-01-48-837_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-03-45-938_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-05-54-122_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-28-22-737_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-36-44-124_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-42-00-738_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0362add9-48b1-43d0-846b-17d1514a7ca7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/159e277f-9e87-4155-8495-4c77b71c42a5-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2642c281-270c-4c8b-b99a-1df14938e340-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/37cfe0ab-6600-49bf-8e65-264fab34fbae-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3eb7ef6b-3101-4d11-91e9-4bd85cf0a2c4-attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/41a38c99-9a78-462a-9c9c-50af8ce885e4-attachment.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/45077d42-83a7-400e-9386-e74f9f2c56ab-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/45f55f05-e4a4-4b4d-9a05-051512d53aae-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6e18006d-5d1f-44cb-b841-a70e258eb3e6-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/70017823-fe47-4a58-ad11-6e62feff2a81-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/71115bf1-7fc9-461a-823f-0be992e76c86-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/74d40bb8-5417-48df-b0a2-25c9b3b6c18a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7e1e1b6a-2ad2-49c3-831e-d83502ee0bf2-attachment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/86b76c8f-904c-4685-b6c8-4bee53400e25-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8b818e90-cc31-464d-bf9b-4a554d105222-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cc8e53a6-b10a-4bce-984f-582628fa54ef-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cdc13757-cf06-49ff-a350-4f41bb8a2326-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/db0e4408-fcb3-4411-b053-9cbaf81d00e9-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/dc38c9ca-05cd-4af7-b725-47eb1a577939-attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e366d8e5-82d1-461c-b9da-4686ce7cabc1-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/eb026dbe-19a3-46ff-9585-6e0c5f923706-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f7a2fe97-418d-4e49-91f0-b6b7702f0a1a-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/execution-summary/ExecutionSummaryReport_10-05-2024_15-41-56-0822-PM.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BuyProducts/Buy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0999c6e5-011c-4980-973a-aeed6a0962aa-attachment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/20aaea37-83c8-49fc-b401-10daa9f8e8f3-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/26a0cdb1-3c56-45d8-ad09-a41627fbdb68-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2c5e3860-f331-425b-a9b4-c322ef7c4a06-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2eebdae9-0936-42e8-9ac3-2d528cd06396-attachment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/323b81f7-fa09-4b18-94d5-bec8f5dfa78f-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/48b3b7c2-57e7-405c-9894-049d14b2fc2a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/58580cf0-e428-43dd-9899-b15926001d8d-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/63531454-6a78-4d36-9903-8ff958b9fa6e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/792e2fdd-d10f-4541-8e64-3445e9235b2b-attachment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/83fb662d-08af-4522-810a-10557d7daa4e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9c3e5a01-5085-43e8-b931-25939a467e5d-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9f99bba9-9e41-4b68-8bd4-29c86160b8b6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/aa4b0b21-dc07-41e8-a4bd-4cf9f312c922-attachment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b6e1920e-279b-4506-8386-e8d763819030-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/bf8e1bff-9b70-41d6-876e-54a442c3d54a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e2e6b64f-4a5b-482d-98ce-500f3f569ec4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ea5c99c8-cbb7-40bc-84a1-9a90b6922945-attachment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/environment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/environment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f0e55115-91ac-4ab3-bbca-89d9ff687437-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/execution-summary/ExecutionSummaryReport_10-05-2024_02-48-36-0627-AM.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BuyProducts/IncreaseQuantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/IncreaseQuantity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +133,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.Buy.executor": "Run",
     "TestNG.BuyProductGuestUser.executor": "Run",
+    "TestNG.BuyProductRegisteredUser.executor": "Run",
+    "TestNG.IncreaseQuantity.ModifyItem.executor": "Run",
+    "TestNG.IncreaseQuantity.executor": "Run",
     "git-widget-placeholder": "BuyProduct",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -93,6 +149,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JDK\project\NopCommerce-ShaftEngine\src\test\resources\testDataFiles" />
       <recent name="C:\Users\Elmaadawy\IdeaProjects\NopCommerceShaft" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -111,6 +168,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ModifyQuantity.ModifyItem" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BuyProducts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BuyProducts" />
+      <option name="MAIN_CLASS_NAME" value="BuyProducts.ModifyQuantity" />
+      <option name="METHOD_NAME" value="ModifyItem" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.ModifyQuantity.ModifyItem" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -144,24 +224,57 @@
       <option name="project" value="LOCAL" />
       <updated>1715276051541</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Buy As Guest V1.0">
+      <option name="closed" value="true" />
+      <created>1715298586272</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715298586272</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Buy As Guest V1.0">
+      <option name="closed" value="true" />
+      <created>1715298642248</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715298642248</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Buy As Guest V2.0">
+      <option name="closed" value="true" />
+      <created>1715328892224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715328892224</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Buy As Guest and Register V1.0">
+      <option name="closed" value="true" />
+      <created>1715337708988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715337708988</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Buy As Guest and Register V2.0">
+      <option name="closed" value="true" />
+      <created>1715342906101</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715342906101</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="New Project" />
     <MESSAGE value="New Project V1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Project V1.0" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductGuestUser.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Buy As Guest V1.0" />
+    <MESSAGE value="Buy As Guest V2.0" />
+    <MESSAGE value="Buy As Guest and Register V1.0" />
+    <MESSAGE value="Buy As Guest and Register V2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buy As Guest and Register V2.0" />
   </component>
 </project>
