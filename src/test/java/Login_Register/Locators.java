@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 public class Locators {
     static By registerLink = By.linkText("Register");
     static By continueButton = By.xpath("//*[contains(@class, 'register-continue-button')]");
+    static By myAccount = By.cssSelector("a[class = ico-account]");
     static By logoutLink = By.cssSelector("a[class = ico-logout]");
     static By genderMale = By.id("gender-male");
     static By genderFemale = By.id("gender-female");

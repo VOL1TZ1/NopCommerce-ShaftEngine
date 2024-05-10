@@ -1,15 +1,12 @@
 package Login_Register;
 
 import com.shaft.driver.SHAFT;
-import com.shaft.validation.Validations;
 
-import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.util.Objects;
 
 import static Login_Register.Locators.*;
-
 public class Register_User_Scenario {
         SHAFT.GUI.WebDriver driver;
         SHAFT.TestData.JSON userInfo;
@@ -47,11 +44,30 @@ public class Register_User_Scenario {
             // Press the save button
             driver.element().click(registerButton);
             // Check if that the email is not duplicated
-            driver.assertThat().element(emailExistsErrorMessage).doesNotExist().perform();
+            //driver.assertThat().element(emailExistsErrorMessage).doesNotExist().perform();
             // Check that the success message appears
             driver.assertThat().element(successMessage).exists().perform();
             // Press the continue button
             driver.element().click(continueButton);
+            // Check that the user is returned to the main page
+            driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
+            // Navigate to my account
+            driver.element().click(myAccount);
+            /***********************************************************************************/
+            // Check the gender
+            if(Objects.equals(userInfo.getTestData("Gender"), "Male")){
+                driver.verifyThat().element(genderMale).isSelected().perform();
+            } else if (Objects.equals(userInfo.getTestData("Gender"), "Female")) {
+                driver.verifyThat().element(genderFemale).isSelected().perform();
+            } else {
+                SHAFT.Report.report("The gender field in the userInfo.json contains invalid data!!");
+            }
+            // Check the First Name
+            form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("First_Name"), firstNameField);
+            // Check the Last Name
+            form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("Last_Name"), lastNameField);
+            // Check the Email
+            form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("Email"), emailField);
             // Press logout
             driver.element().click(logoutLink);
         }

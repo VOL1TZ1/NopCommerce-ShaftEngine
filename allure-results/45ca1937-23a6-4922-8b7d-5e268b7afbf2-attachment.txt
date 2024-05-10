@@ -1,0 +1,13 @@
+[ReportManager] Loaded Test Data: "src/test/resources/testDataFiles/userInfo.json". @10-05-2024 11:38:23.0016 AM
+[ReportManager] Successfully created attachment 'Test Data - JSON' @10-05-2024 11:38:23.0018 AM
+[ReportManager] Setting "targetOperatingSystem" property with "windows". @10-05-2024 11:38:23.0047 AM
+[ReportManager] Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized], extensions: [], prefs: {download.default_directory: D:\Courses\Sprints\Front_En..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true} @10-05-2024 11:38:23.0073 AM
+[ReportManager] Attempting to run locally on: "Windows | Chrome". @10-05-2024 11:38:23.0074 AM
+[ReportManager] Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection... @10-05-2024 11:38:23.0074 AM
+[ReportManager] Successfully Opened: "Windows | Chrome". @10-05-2024 11:38:27.0606 AM
+[ReportManager] Target URL: "https://demo.nopcommerce.com/" @10-05-2024 11:38:27.0629 AM
+[ReportManager] Initial URL: "about:blank" @10-05-2024 11:38:27.0652 AM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/". @10-05-2024 11:38:29.0184 AM
+[ReportManager] Expected "nopCommerce demo store", and actual "nopCommerce demo store" @10-05-2024 11:38:29.0214 AM
+[ReportManager] Successfully created attachment 'Screenshot - Verify_11-38-30-518_10052024' @10-05-2024 11:38:30.0522 AM
+[ReportManager] Verification passed @10-05-2024 11:38:30.0523 AM
