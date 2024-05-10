@@ -34,45 +34,56 @@ public class BuyProductGuestUser {
     By PhoneNumber = By.id("BillingNewAddress_PhoneNumber");
     By FaxNumber = By.id("BillingNewAddress_FaxNumber");
     By ContinueButton = By.xpath("(//button[contains(@class, 'new-address-next-step-button')])[1]");
-
-
-
+    By ExpectedResult = By.xpath("//*[@id=\"shopping-cart-form\"]/div[1]/table/tbody/tr/td[3]/a");
+    By ContinueShipping = By.xpath("//button[contains(@class, 'shipping-method-next-step-button')]");
+    By ContinuePayment = By.xpath("//button[contains(@class, 'payment-method-next-step-button')]");
+    By ContinueInformation = By.xpath("//button[contains(@class, 'payment-info-next-step-button')]");
+    By ConfirmOrder = By.xpath("//button[contains(@class, 'confirm-order-next-step-button')]");
+    By SuccessMessage = By.xpath("//strong[contains(text(), 'Your order has been successfully processed!')]");
+    By Finish = By.xpath("//button[contains(@class, 'order-completed-continue-button')]");
     @Test
     public void BuyProductGuest(){
     driver.element().click(Computers);
     driver.element().click(Desktops);
     driver.element().click(AddToCart);
     driver.element().click(ShoppingCart);
+    driver.assertThat().element(ExpectedResult).exists().perform();
     driver.element().click(AgreeTerms);
     driver.element().click(CheckOut);
     driver.element().click(CheckOutGuest);
 
-    driver.element().type(FirstName, userInfo.getTestData("First_Name"))
-                .keyPress(FirstName, Keys.ENTER);
-    driver.element().type(LastName, userInfo.getTestData("Last_Name"))
-                .keyPress(LastName, Keys.ENTER);
-    driver.element().type(Email, userInfo.getTestData("Email"))
-                .keyPress(Email, Keys.ENTER);
-    driver.element().type(Company, userInfo.getTestData("Company"))
-                .keyPress(Company, Keys.ENTER);
+
+    driver.element().type(FirstName, userInfo.getTestData("First_Name"));
+
+    driver.element().type(LastName, userInfo.getTestData("Last_Name"));
+
+    driver.element().type(Email, userInfo.getTestData("Email"));
+
+    driver.element().type(Company, userInfo.getTestData("Company"));
+
 
     driver.element().click(CountryButton);
     driver.element().click(SelectCountry);
 
-    driver.element().type(City, userInfo.getTestData("City"))
-                .keyPress(City, Keys.ENTER);
-        driver.element().type(Address1, userInfo.getTestData("Address1"))
-                .keyPress(Address1, Keys.ENTER);
-        driver.element().type(Address2, userInfo.getTestData("Address2"))
-                .keyPress(Address2, Keys.ENTER);
-        driver.element().type(ZipCode, userInfo.getTestData("ZipCode"))
-                .keyPress(ZipCode, Keys.ENTER);
-        driver.element().type(PhoneNumber, userInfo.getTestData("PhoneNumber"))
-                .keyPress(PhoneNumber, Keys.ENTER);
-        driver.element().type(FaxNumber, userInfo.getTestData("FaxNumber"))
-                .keyPress(FaxNumber, Keys.ENTER);
-        driver.element().click(ContinueButton);
+    driver.element().type(City, userInfo.getTestData("City"));
 
+        driver.element().type(Address1, userInfo.getTestData("Address1"));
+
+        driver.element().type(Address2, userInfo.getTestData("Address2"));
+
+        driver.element().type(ZipCode, userInfo.getTestData("ZipCode"));
+
+        driver.element().type(PhoneNumber, userInfo.getTestData("PhoneNumber"));
+
+        driver.element().type(FaxNumber, userInfo.getTestData("FaxNumber"));
+
+        driver.element().click(ContinueButton);
+        driver.element().click(ContinueShipping);
+        driver.element().click(ContinuePayment);
+        driver.element().click(ContinueInformation);
+        driver.element().click(ConfirmOrder);
+        driver.verifyThat().element(SuccessMessage).exists().perform();
+        driver.element().click(Finish);
 
 
     }
@@ -91,7 +102,7 @@ public class BuyProductGuestUser {
     }
     @AfterMethod
     public void RunThisLast(){
-        driver.quit();
+       // driver.quit();
         SHAFT.Properties.reporting.openAllureReportAfterExecution();
     }
 }
