@@ -18,7 +18,7 @@ public class NavigateToBanner {
         driver = new SHAFT.GUI.WebDriver();
         // Go to the website
         driver.browser().navigateToURL(siteURL);
-        // To ensure that the site loaded and there is no problem in the connection
+        // To ensure that the site is loaded and there is no problem in the connection
         driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
     }
     @Test

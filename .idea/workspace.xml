@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="New Project V1.0">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Navigate/NavigateToBanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment=" Navigate to Banner TestCase">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Navigate/NavigateBySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Navigate/NavigateToCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Navigate/Navigate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Navigate/NavigateToBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Navigate/NavigateToBanner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +51,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.Navigate.NavigateToBanner.executor": "Run",
     "TestNG.Navigate.testcase.executor": "Run",
+    "TestNG.NavigateBySearch.itemSearch.executor": "Run",
+    "TestNG.NavigateToCategory.category.executor": "Run",
     "git-widget-placeholder": "Navigate-To-Product",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -68,7 +71,25 @@
       <recent name="C:\Users\Elmaadawy\IdeaProjects\NopCommerceShaft" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NavigateToBanner.NavigateToBanner">
+  <component name="RunManager" selected="TestNG.NavigateBySearch.itemSearch">
+    <configuration name="NavigateBySearch.itemSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Navigate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Navigate" />
+      <option name="MAIN_CLASS_NAME" value="Navigate.NavigateBySearch" />
+      <option name="METHOD_NAME" value="itemSearch" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NavigateToBanner.NavigateToBanner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Ecommerce_Automation_Testing" />
       <extension name="coverage">
@@ -105,8 +126,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NavigateToCategory.category" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Navigate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Navigate" />
+      <option name="MAIN_CLASS_NAME" value="Navigate.NavigateToCategory" />
+      <option name="METHOD_NAME" value="category" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NavigateBySearch.itemSearch" />
+        <item itemvalue="TestNG.NavigateToCategory.category" />
         <item itemvalue="TestNG.NavigateToBanner.NavigateToBanner" />
         <item itemvalue="TestNG.NavigateToBanner.testcase" />
       </list>
@@ -137,12 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715276051541</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=" Navigate to Banner TestCase">
+      <option name="closed" value="true" />
+      <created>1715327907992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715327907992</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New Project" />
     <MESSAGE value="New Project V1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Project V1.0" />
+    <MESSAGE value=" Navigate to Banner TestCase" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Navigate to Banner TestCase" />
   </component>
 </project>
