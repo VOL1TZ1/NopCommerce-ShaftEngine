@@ -1,5 +1,6 @@
 package BuyProducts;
 
+import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,6 +17,8 @@ public class BuyProductRegisteredUser {
     SHAFT.TestData.JSON userInfo;
     String siteURL = "https://demo.nopcommerce.com/";
     String siteTitle = "nopCommerce demo store";
+    String EmailGen;
+    Faker FakerObject;
 
     // Declare locators using By class for web elements
 
@@ -115,7 +118,7 @@ public class BuyProductRegisteredUser {
                 .keyPress(dobYearField, Keys.ENTER);
 
         // Fill in the email
-        driver.element().type(emailField, userInfo.getTestData("EmailReg"));
+        driver.element().type(emailField, EmailGen);
 
         // Fill in the Company name
         driver.element().type(companyNameField, userInfo.getTestData("CompanyReg"));
@@ -138,7 +141,7 @@ public class BuyProductRegisteredUser {
         //Fill the information needed for the checkout
         driver.element().type(FirstName, userInfo.getTestData("First_Name"));
         driver.element().type(LastName, userInfo.getTestData("Last_Name"));
-        driver.element().type(Email, userInfo.getTestData("Email"));
+        driver.element().type(Email, EmailGen);
         driver.element().type(Company, userInfo.getTestData("Company"));
         driver.element().click(CountryButton);
         driver.element().click(SelectCountry);
@@ -177,6 +180,8 @@ public class BuyProductRegisteredUser {
         userInfo = new SHAFT.TestData.JSON("userInfo2.json");
         // Create new driver object
         driver = new SHAFT.GUI.WebDriver();
+        FakerObject = new Faker();
+        EmailGen = FakerObject.internet().safeEmailAddress();
         // Go to the website
         driver.browser().navigateToURL(siteURL);
         // To ensure that the site loaded and there is no problem in the connection

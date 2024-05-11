@@ -1,5 +1,6 @@
 package BuyProducts;
 
+import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,6 +13,9 @@ public class BuyProductGuestUser {
     // Declare class variables
     SHAFT.GUI.WebDriver driver;
     SHAFT.TestData.JSON userInfo;
+    Faker FakerObject;
+    String EmailGen;
+
     String siteURL = "https://demo.nopcommerce.com/";
     String siteTitle = "nopCommerce demo store";
 
@@ -67,7 +71,7 @@ public class BuyProductGuestUser {
     //Add the information needed to The Checkout process
     driver.element().type(FirstName, userInfo.getTestData("First_Name"));
     driver.element().type(LastName, userInfo.getTestData("Last_Name"));
-    driver.element().type(Email, userInfo.getTestData("Email"));
+    driver.element().type(Email, EmailGen);
     driver.element().type(Company, userInfo.getTestData("Company"));
     //Select the country
     driver.element().click(CountryButton);
@@ -103,10 +107,13 @@ public class BuyProductGuestUser {
         userInfo = new SHAFT.TestData.JSON("userInfo.json");
         // Create new driver object
         driver = new SHAFT.GUI.WebDriver();
+        FakerObject = new Faker();
+        EmailGen = FakerObject.internet().safeEmailAddress();
         // Go to the website
         driver.browser().navigateToURL(siteURL);
         // To ensure that the site loaded and there is no problem in the connection
         driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
+
 
     }
     // Method to run after each test method
