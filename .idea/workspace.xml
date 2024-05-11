@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="* Added a validation phase where the script validates the data entered during registration in the account info section">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Scenarios_by_mazen/add_comment_in_news_sction/Add_Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Scenarios_by_mazen/wish_list/Wish_List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SocialMedia/Social.java" beforeDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/1481aae0-aa28-4ea9-af71-c601fff0dfbb-attachment.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/188b430f-578d-423d-bf84-768993afaeac-attachment.json" afterDir="false" />
@@ -165,7 +169,7 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propCompiler"
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Elmaadawy\IdeaProjects\NopCommerceShaft" />
