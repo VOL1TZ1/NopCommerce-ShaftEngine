@@ -25,7 +25,7 @@ public class NavigateToCategory {
         // To ensure that the site is loaded and there is no problem in the connection
         driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
     }
-    @Test
+    @Test(priority = 4)
     public void category(){
         // Click on the Computer Category
         driver.element().click(computersCategory);

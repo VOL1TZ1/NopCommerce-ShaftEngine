@@ -5,8 +5,9 @@
         <classes>
             <class name="Login_Register.registerUserScenario"/>
             <class name="Login_Register.LoginScenario"/>
+            <class name="BuyProducts.BuyProductGuestUser"/>
             <class name="Navigate.NavigateToCategory"/>
-            <class name="Scenarios_by_mazen.socialMedia_communityPolls_scenario.Social_Polls_Scenario"/>
+            <class name="Navigate.NavigateBySearch"></class>
         </classes>
     </test>
 </suite>

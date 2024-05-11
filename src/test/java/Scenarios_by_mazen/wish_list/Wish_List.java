@@ -27,7 +27,7 @@ public class Wish_List {
 
 
 
-    @Test
+    @Test(priority = 6)
     public void check_wish_list(){
         //scroll down
         driver.element().scrollToElement(scrollDown);

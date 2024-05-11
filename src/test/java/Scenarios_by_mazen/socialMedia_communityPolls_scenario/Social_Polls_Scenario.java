@@ -26,7 +26,7 @@ public class Social_Polls_Scenario {
      By voteButton = By.id("vote-poll-1");
     By elementLocator = By.id("poll-block-1"); //to scroll
     By elementLocatorIcons = By.cssSelector("div[class=\"social\"]");//to scroll
-    @Test(priority = 3)
+    @Test(priority = 5)
     public void icons_checking()  {
 
         //check facebook icon is working
@@ -64,15 +64,12 @@ public class Social_Polls_Scenario {
 
     }
 
-    @Test(priority = 4)
+    @Test(priority = 6)
     public void polls_checking()  {
 //        driver.element().scrollToElement(elementLocator);
 //        // driver.element().type(poll1,testData.getTestData("DO_YOU_LIKE_NOPCOMMERCE?")).click(poll1);
 //        driver.element().click(poll1);
 //        driver.element().click(voteButton);
-
-
-
         if(Objects.equals(testData.getTestData("DO_YOU_LIKE_NOPCOMMERCE"),"Excellent")){
             driver.element().scrollToElement(elementLocator);
             driver.element().click(poll1);
@@ -93,11 +90,6 @@ public class Social_Polls_Scenario {
             SHAFT.Report.report("the testData file is contain invalid data");
 
         }
-
-
-
-
-
     }
     @BeforeMethod
     public void runThisFirst(){

@@ -113,8 +113,6 @@ public class BuyProductGuestUser {
         driver.browser().navigateToURL(siteURL);
         // To ensure that the site loaded and there is no problem in the connection
         driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
-
-
     }
     // Method to run after each test method
     @AfterMethod

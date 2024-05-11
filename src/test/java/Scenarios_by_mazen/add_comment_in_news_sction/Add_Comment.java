@@ -26,7 +26,7 @@ public class Add_Comment {
 
 
 
-    @Test
+    @Test(priority = 6)
     public void addComment(){
         //scroll down to find section news
         driver.element().scrollToElement(locateNewSction);
@@ -43,7 +43,7 @@ public class Add_Comment {
 
         //assertion
         String expectedRes = "News comment is successfully added.";
-        String actualRes = driver.element().getText(verifyMsgAddedComment);
+        //String actualRes = driver.element().getText(verifyMsgAddedComment);
         //soft assertion
         driver.verifyThat().element(verifyMsgAddedComment).text().isEqualTo(expectedRes).perform();
         //Assert.assertTrue(expectedRes.contains(actualRes));

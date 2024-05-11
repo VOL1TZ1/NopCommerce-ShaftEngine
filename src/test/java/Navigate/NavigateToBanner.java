@@ -21,7 +21,7 @@ public class NavigateToBanner {
         // To ensure that the site is loaded and there is no problem in the connection
         driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
     }
-    @Test
+    @Test(priority = 4)
     public void Banner(){
         driver.element().click(bannerImage);
         //String actualSite =driver.browser().getCurrentURL();
