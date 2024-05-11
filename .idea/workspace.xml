@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="Buy As Guest and Register V2.0">
+    <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="ModifyQuantity V1.0">
       <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_09-48-27-029_AllureReport.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_09-49-43-623_AllureReport.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_10-07-54-446_AllureReport.html" afterDir="false" />
@@ -36,29 +36,30 @@
       <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-28-22-737_AllureReport.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-36-44-124_AllureReport.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-42-00-738_AllureReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0362add9-48b1-43d0-846b-17d1514a7ca7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/159e277f-9e87-4155-8495-4c77b71c42a5-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2642c281-270c-4c8b-b99a-1df14938e340-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/37cfe0ab-6600-49bf-8e65-264fab34fbae-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3eb7ef6b-3101-4d11-91e9-4bd85cf0a2c4-attachment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/41a38c99-9a78-462a-9c9c-50af8ce885e4-attachment.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/45077d42-83a7-400e-9386-e74f9f2c56ab-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/45f55f05-e4a4-4b4d-9a05-051512d53aae-attachment.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6e18006d-5d1f-44cb-b841-a70e258eb3e6-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/70017823-fe47-4a58-ad11-6e62feff2a81-attachment.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/71115bf1-7fc9-461a-823f-0be992e76c86-attachment.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/74d40bb8-5417-48df-b0a2-25c9b3b6c18a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7e1e1b6a-2ad2-49c3-831e-d83502ee0bf2-attachment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/86b76c8f-904c-4685-b6c8-4bee53400e25-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8b818e90-cc31-464d-bf9b-4a554d105222-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cc8e53a6-b10a-4bce-984f-582628fa54ef-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cdc13757-cf06-49ff-a350-4f41bb8a2326-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/db0e4408-fcb3-4411-b053-9cbaf81d00e9-attachment.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/dc38c9ca-05cd-4af7-b725-47eb1a577939-attachment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e366d8e5-82d1-461c-b9da-4686ce7cabc1-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/eb026dbe-19a3-46ff-9585-6e0c5f923706-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f7a2fe97-418d-4e49-91f0-b6b7702f0a1a-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/execution-summary/ExecutionSummaryReport_10-05-2024_15-41-56-0822-PM.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-43-28-795_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/2024-05-10_15-45-46-132_AllureReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2c90d1cd-adb6-4099-9403-0287d5fd80df-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4127f9ba-2b02-4d9c-8c17-e5f1f37d35d0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/44263bd6-26b9-488f-8960-0b931961500b-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/44a1da0d-18c2-4453-8ee0-e854e91c5a34-attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/47a488c7-dd29-4db1-83ed-c72a86cb989e-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4e6c0984-fb3c-4c97-84b6-3a5971d8df3b-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5fa35fe5-ce33-4cf4-8c4f-66aa086d697e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/65b6a0e1-0975-4685-86c0-91093ac0a037-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/813c6f89-41ed-4433-b1e5-072588ffbd29-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8be0c5fa-6869-4094-9b12-1cdb77e1cca1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a1091f1b-0a17-42b0-bad3-160875687e45-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/aeffacd6-44e9-4ff6-a55a-a5f5c341091c-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b1742582-5df6-4bca-8097-fa27949f26c4-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c3b6e588-7a5d-4d85-8e41-92426ea53921-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c4f6a104-bddc-485e-8e61-cc852131e2ce-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/dab580d7-28ab-4c89-972a-bb18032df0c6-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/df310bbb-e177-4f4e-8b1d-7a0554c3b972-attachment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e8473664-5351-4597-bcdf-53630a9b1035-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/eb6eb78c-7727-4522-bf2d-920e1579a328-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ee05cb51-df35-4597-a491-273e67fef2f0-attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f08b14ab-16cf-48f4-aadb-23a3569c7d5a-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/execution-summary/ExecutionSummaryReport_10-05-2024_15-45-40-0855-PM.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/0999c6e5-011c-4980-973a-aeed6a0962aa-attachment.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/20aaea37-83c8-49fc-b401-10daa9f8e8f3-attachment.png" beforeDir="false" />
@@ -78,10 +79,12 @@
       <change beforePath="$PROJECT_DIR$/allure-results/bf8e1bff-9b70-41d6-876e-54a442c3d54a-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/e2e6b64f-4a5b-482d-98ce-500f3f569ec4-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/ea5c99c8-cbb7-40bc-84a1-9a90b6922945-attachment.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/environment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/environment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/f0e55115-91ac-4ab3-bbca-89d9ff687437-attachment.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/execution-summary/ExecutionSummaryReport_10-05-2024_02-48-36-0627-AM.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BuyProducts/IncreaseQuantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/IncreaseQuantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductGuestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductGuestUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductRegisteredUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/BuyProductRegisteredUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BuyProducts/IncreaseQuantity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BuyProducts/ModifyQuantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/ModifyQuantity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,27 +129,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.Buy.executor": "Run",
-    "TestNG.BuyProductGuestUser.executor": "Run",
-    "TestNG.BuyProductRegisteredUser.executor": "Run",
-    "TestNG.IncreaseQuantity.ModifyItem.executor": "Run",
-    "TestNG.IncreaseQuantity.executor": "Run",
-    "git-widget-placeholder": "BuyProduct",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JDK/project/NopCommerce-ShaftEngine/src/test/resources/testDataFiles",
-    "onboarding.tips.debug.path": "C:/Users/Elmaadawy/IdeaProjects/NopCommerceShaft/src/main/java/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.Buy.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuyProductGuestUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuyProductRegisteredUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.IncreaseQuantity.ModifyItem.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.IncreaseQuantity.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ModifyQuantity.ModifyItem.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;BuyProduct&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JDK/project/NopCommerce-ShaftEngine/src/test/resources/testDataFiles&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Elmaadawy/IdeaProjects/NopCommerceShaft/src/main/java/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JDK\project\NopCommerce-ShaftEngine\src\test\resources\testDataFiles" />
@@ -156,7 +160,7 @@
       <recent name="D:\JDK\project\NopCommerce-ShaftEngine\src\test\resources\testDataFiles" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.BuyProductRegisteredUser.BuyProductGuest">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,6 +168,24 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuyProductRegisteredUser.BuyProductGuest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BuyProducts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BuyProducts" />
+      <option name="MAIN_CLASS_NAME" value="BuyProducts.BuyProductRegisteredUser" />
+      <option name="METHOD_NAME" value="BuyProductGuest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,6 +210,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BuyProductRegisteredUser.BuyProductGuest" />
         <item itemvalue="TestNG.ModifyQuantity.ModifyItem" />
       </list>
     </recent_temporary>
@@ -264,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715342906101</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ModifyQuantity V1.0">
+      <option name="closed" value="true" />
+      <created>1715345218564</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715345218564</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -275,6 +306,7 @@
     <MESSAGE value="Buy As Guest V2.0" />
     <MESSAGE value="Buy As Guest and Register V1.0" />
     <MESSAGE value="Buy As Guest and Register V2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buy As Guest and Register V2.0" />
+    <MESSAGE value="ModifyQuantity V1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="ModifyQuantity V1.0" />
   </component>
 </project>
