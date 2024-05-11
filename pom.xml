@@ -19,6 +19,12 @@
         <junit-jupiter-engine.version>5.10.2</junit-jupiter-engine.version>
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
         <dependency>
             <groupId>io.github.shafthq</groupId>
             <artifactId>SHAFT_ENGINE</artifactId>

@@ -172,8 +172,74 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JDK\project\NopCommerce-ShaftEngine\src\test\resources\testDataFiles" />
       <recent name="C:\Users\Elmaadawy\IdeaProjects\NopCommerceShaft" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JDK\project\NopCommerce-ShaftEngine\src\test\resources\testDataFiles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.BuyProductRegisteredUser.BuyProductGuest">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuyProductRegisteredUser.BuyProductGuest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BuyProducts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BuyProducts" />
+      <option name="MAIN_CLASS_NAME" value="BuyProducts.BuyProductRegisteredUser" />
+      <option name="METHOD_NAME" value="BuyProductGuest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModifyQuantity.ModifyItem" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BuyProducts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BuyProducts" />
+      <option name="MAIN_CLASS_NAME" value="BuyProducts.ModifyQuantity" />
+      <option name="METHOD_NAME" value="ModifyItem" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.BuyProductRegisteredUser.BuyProductGuest" />
+        <item itemvalue="TestNG.ModifyQuantity.ModifyItem" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="RunManager" selected="TestNG.LoginScenario.loginUser">
     <configuration name="LoginScenario" type="TestNG" temporary="true" nameIsGenerated="true">

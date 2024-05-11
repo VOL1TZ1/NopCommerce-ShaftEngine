@@ -1,0 +1,55 @@
+
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                                         Test Method: 'BuyProducts.BuyProductGuestUser.BuyProductGuest'                                         
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 02:48:26.0319 AM
+[ReportManager] Click "Computers". @10-05-2024 02:48:27.0454 AM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 02:48:27.0614 AM
+[ReportManager] Click "Picture for category Desktops". @10-05-2024 02:48:28.0816 AM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 02:48:28.0989 AM
+[ReportManager] Click "ADD TO CART". @10-05-2024 02:48:29.0025 AM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 02:48:29.0204 AM
+[ReportManager] Click "By.xpath: //span[@class='cart-label']". @10-05-2024 02:48:30.0493 AM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 02:48:30.0665 AM
+[ReportManager] Click "I agree with the terms of service and I adhere to them unconditionally". @10-05-2024 02:48:30.0728 AM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 02:48:30.0896 AM
+[ReportManager] Click "CHECKOUT". @10-05-2024 02:48:31.0543 AM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 02:48:31.0714 AM
+[ReportManager] Click "CHECKOUT AS GUEST". @10-05-2024 02:48:32.0375 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:33.0652 AM
+[ReportManager] Type "Mohamed" into "By.id: BillingNewAddress_FirstName". @10-05-2024 02:48:33.0711 AM
+[ReportManager] Key press "ENTER" against "First name:". @10-05-2024 02:48:33.0803 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:33.0893 AM
+[ReportManager] Type "El-Taher" into "Last name:". @10-05-2024 02:48:33.0948 AM
+[ReportManager] Key press "ENTER" against "Last name:". @10-05-2024 02:48:34.0021 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:34.0108 AM
+[ReportManager] Type "johnbutler2@gmail.com" into "Email:". @10-05-2024 02:48:34.0151 AM
+[ReportManager] Key press "ENTER" against "Email:". @10-05-2024 02:48:34.0262 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:34.0351 AM
+[ReportManager] Type "Sprints" into "Company:". @10-05-2024 02:48:34.0386 AM
+[ReportManager] Key press "ENTER" against "Company:". @10-05-2024 02:48:34.0462 AM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 02:48:34.0618 AM
+[ReportManager] Click "Country:". @10-05-2024 02:48:34.0688 AM
+[ReportManager] Click "Egypt". @10-05-2024 02:48:34.0776 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:34.0864 AM
+[ReportManager] Type "Cairo" into "City:". @10-05-2024 02:48:34.0936 AM
+[ReportManager] Key press "ENTER" against "City:". @10-05-2024 02:48:35.0048 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:35.0154 AM
+[ReportManager] Type "Mokattam" into "Address 1:". @10-05-2024 02:48:35.0188 AM
+[ReportManager] Key press "ENTER" against "Address 1:". @10-05-2024 02:48:35.0253 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:35.0337 AM
+[ReportManager] Type "9Street" into "Address 2:". @10-05-2024 02:48:35.0371 AM
+[ReportManager] Key press "ENTER" against "Address 2:". @10-05-2024 02:48:35.0464 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:35.0553 AM
+[ReportManager] Type "11571" into "Zip / postal code:". @10-05-2024 02:48:35.0585 AM
+[ReportManager] Key press "ENTER" against "Zip / postal code:". @10-05-2024 02:48:35.0649 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:35.0733 AM
+[ReportManager] Type "01110973351" into "Phone number:". @10-05-2024 02:48:35.0768 AM
+[ReportManager] Key press "ENTER" against "Phone number:". @10-05-2024 02:48:35.0841 AM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 02:48:35.0936 AM
+[ReportManager] Type "753951" into "Fax number:". @10-05-2024 02:48:35.0971 AM
+[ReportManager] Key press "ENTER" against "Fax number:". @10-05-2024 02:48:36.0049 AM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 02:48:36.0220 AM
+[ReportManager] Click "CONTINUE". @10-05-2024 02:48:36.0250 AM

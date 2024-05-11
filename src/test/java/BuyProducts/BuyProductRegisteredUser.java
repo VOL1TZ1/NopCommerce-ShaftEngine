@@ -1,0 +1,199 @@
+package BuyProducts;
+
+import com.github.javafaker.Faker;
+import com.shaft.driver.SHAFT;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import java.util.Objects;
+
+public class BuyProductRegisteredUser {
+
+    // Declare class variables
+    SHAFT.GUI.WebDriver driver;
+    SHAFT.TestData.JSON userInfo;
+    String siteURL = "https://demo.nopcommerce.com/";
+    String siteTitle = "nopCommerce demo store";
+    String EmailGen;
+    Faker FakerObject;
+
+    // Declare locators using By class for web elements
+
+    //Declare locators for Add item to cart
+    By Computers = By.xpath("(//a[@href='/computers'])[1]");
+    By Desktops = By.xpath("//img[@alt='Picture for category Desktops']");
+    By AddToCart = By.xpath("(//button[contains(@class, 'product-box-add-to-cart-button')])[2]");
+    By ShoppingCart = By.xpath("//span[@class='cart-label']");
+    By ExpectedResult = By.xpath("//*[@id=\"shopping-cart-form\"]/div[1]/table/tbody/tr/td[3]/a");
+
+    //Declare locators for CheckOut using Reister button
+    By AgreeTerms = By.id("termsofservice");
+    By CheckOut = By.id("checkout");
+    By RegisterButton = By.xpath("//button[contains(@class,'register-button')]");
+    By genderMale = By.id("gender-male");
+    By genderFemale = By.id("gender-female");
+    By firstNameField = By.name("FirstName");
+    By lastNameField = By.name("LastName");
+    By dobDayField = By.name("DateOfBirthDay");
+    By dobMonthField = By.name("DateOfBirthMonth");
+    By dobYearField = By.name("DateOfBirthYear");
+    By emailField = By.name("Email");
+    By companyNameField = By.name("Company");
+    By passwordField = By.name("Password");
+    By confirmPasswordField = By.name("ConfirmPassword");
+    By registerButton = By.name("register-button");
+    By SuccessMessage1 = By.xpath("//div[contains(text(), 'Your registration completed')]");
+    By FinishReg = By.xpath("//a[contains(@class, 'register-continue-button')]");
+
+   //Declare locators for the Shipping information After CheckOut
+    By FirstName = By.id("BillingNewAddress_FirstName");
+    By LastName = By.id("BillingNewAddress_LastName");
+    By Email = By.id("BillingNewAddress_Email");
+    By Company = By.id("BillingNewAddress_Company");
+    By CountryButton = By.id("BillingNewAddress_CountryId");
+    By SelectCountry = By.xpath("//*[text()='Egypt']");
+
+    By City = By.id("BillingNewAddress_City");
+    By Address1 = By.id("BillingNewAddress_Address1");
+    By Address2 = By.id("BillingNewAddress_Address2");
+    By ZipCode = By.id("BillingNewAddress_ZipPostalCode");
+    By PhoneNumber = By.id("BillingNewAddress_PhoneNumber");
+    By FaxNumber = By.id("BillingNewAddress_FaxNumber");
+    By ContinueButton = By.xpath("(//button[contains(@class, 'new-address-next-step-button')])[1]");
+    //Locators For Confirm shipping address
+    By ContinueShipping = By.xpath("//button[contains(@class, 'shipping-method-next-step-button')]");
+    //Locators For choosing payment method
+    By CreditCard = By.id("paymentmethod_1");
+    By CardHolderName = By.id("CardholderName");
+    By CardNumber = By.id("CardNumber");
+    By ExpireMonth = By.id("ExpireMonth");
+    By ExpireYear = By.id("ExpireYear");
+    By CardCode = By.id("CardCode");
+    //Locators for confirm the process
+    By ContinuePayment = By.xpath("//button[contains(@class, 'payment-method-next-step-button')]");
+    By ContinueInformation = By.xpath("//button[contains(@class, 'payment-info-next-step-button')]");
+    By ConfirmOrder = By.xpath("//button[contains(@class, 'confirm-order-next-step-button')]");
+    By SuccessMessage = By.xpath("//strong[contains(text(), 'Your order has been successfully processed!')]");
+    By Finish = By.xpath("//button[contains(@class, 'order-completed-continue-button')]");
+
+
+    // Test method to perform the purchase as a RegisteredUser With Credit Card As Payment Method
+    @Test
+    public void BuyProductGuest() {
+        //Click on Elements to navigate and add products to cart
+        driver.element().click(Computers);
+        driver.element().click(Desktops);
+        driver.element().click(AddToCart);
+        driver.element().click(ShoppingCart);
+        //Verify That the selected item has been added successfully
+        driver.assertThat().element(ExpectedResult).exists().perform();
+        //Agree to terms and proceed to the checkout process
+        driver.element().click(AgreeTerms);
+        driver.element().click(CheckOut);
+        //Click on Register Button
+        driver.element().click(RegisterButton);
+        //After redirect to the Register Page fill the information needed
+        if (Objects.equals(userInfo.getTestData("Gender"), "Male")) {
+            driver.element().click(genderMale);
+        } else if (Objects.equals(userInfo.getTestData("Gender"), "Female")) {
+            driver.element().click(genderFemale);
+        } else {
+            SHAFT.Report.report("The gender field in the userInfo.json contains invalid data!!");
+        }
+        // Fill in the first name
+        driver.element().type(firstNameField, userInfo.getTestData("First_NameReg"))
+                .keyPress(firstNameField, Keys.ENTER);
+        // Fill in the Last name
+        driver.element().type(lastNameField, userInfo.getTestData("Last_NameReg"))
+                .keyPress(lastNameField, Keys.ENTER);
+        // Fill in the date of birth
+        driver.element().select(dobDayField, userInfo.getTestData("DoB_Day"))
+                .keyPress(dobDayField, Keys.ENTER);
+        driver.element().select(dobMonthField, userInfo.getTestData("DoB_Month"))
+                .keyPress(dobMonthField, Keys.ENTER);
+        driver.element().select(dobYearField, userInfo.getTestData("DoB_Year"))
+                .keyPress(dobYearField, Keys.ENTER);
+
+        // Fill in the email
+        driver.element().type(emailField, EmailGen);
+
+        // Fill in the Company name
+        driver.element().type(companyNameField, userInfo.getTestData("CompanyReg"));
+
+        // Fill in the password
+        driver.element().type(passwordField, userInfo.getTestData("Password"));
+
+        // Fill in the confirmation password
+        driver.element().type(confirmPasswordField, userInfo.getTestData("Password"));
+
+        //Click on the register button and verify that the user has been added successfully
+        driver.element().click(registerButton);
+        driver.verifyThat().element(SuccessMessage1).exists().perform();
+        driver.element().click(FinishReg);
+
+        //Proceed to the CheckOut and agree on terms
+        driver.element().click(AgreeTerms);
+        driver.element().click(CheckOut);
+
+        //Fill the information needed for the checkout
+        driver.element().type(FirstName, userInfo.getTestData("First_Name"));
+        driver.element().type(LastName, userInfo.getTestData("Last_Name"));
+        driver.element().type(Email, EmailGen);
+        driver.element().type(Company, userInfo.getTestData("Company"));
+        driver.element().click(CountryButton);
+        driver.element().click(SelectCountry);
+        driver.element().type(City, userInfo.getTestData("City"));
+        driver.element().type(Address1, userInfo.getTestData("Address1"));
+        driver.element().type(Address2, userInfo.getTestData("Address2"));
+        driver.element().type(ZipCode, userInfo.getTestData("ZipCode"));
+        driver.element().type(PhoneNumber, userInfo.getTestData("PhoneNumber"));
+        driver.element().type(FaxNumber, userInfo.getTestData("FaxNumber"));
+        driver.element().click(ContinueButton);
+
+        //Confirm Shipping method
+        driver.element().click(ContinueShipping);
+        //Confirm payment method with credit card
+        driver.element().click(CreditCard);
+        driver.element().click(CreditCard);
+        driver.element().click(ContinuePayment);
+        //Add CreditCard Information
+        driver.element().type(CardHolderName, userInfo.getTestData("CardHolderName"));
+        driver.element().type(CardNumber, userInfo.getTestData("CardNumber"));
+        driver.element().select(ExpireMonth, userInfo.getTestData("Exp_Month"));
+        driver.element().select(ExpireYear, userInfo.getTestData("Exp_Year"));
+        driver.element().type(CardCode, userInfo.getTestData("CardCode"));
+        driver.element().click(ContinueInformation);
+        //Confirm Order
+        driver.element().click(ConfirmOrder);
+        //Verify That the order has been added successfully
+        driver.verifyThat().element(SuccessMessage).exists().perform();
+        driver.element().click(Finish);
+
+    }
+    // Method to run before each test method
+    @BeforeMethod
+    public void RunThisFirst(){
+        // Extract user information
+        userInfo = new SHAFT.TestData.JSON("userInfo2.json");
+        // Create new driver object
+        driver = new SHAFT.GUI.WebDriver();
+        FakerObject = new Faker();
+        EmailGen = FakerObject.internet().safeEmailAddress();
+        // Go to the website
+        driver.browser().navigateToURL(siteURL);
+        // To ensure that the site loaded and there is no problem in the connection
+        driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
+
+    }
+    // Method to run after each test method
+    @AfterMethod
+    public void RunThisLast(){
+        // Quit the WebDriver instance
+        driver.quit();
+        // Open Allure report for reporting
+        SHAFT.Properties.reporting.openAllureReportAfterExecution();
+    }
+}
