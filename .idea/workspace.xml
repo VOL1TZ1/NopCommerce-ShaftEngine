@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bacec6e-27bb-42ce-bf98-64be2048d4fd" name="Changes" comment="New Project V1.0">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BuyProducts/Buy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Login_Register/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Navigate/Navigate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SocialMedia/Social.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Scenarios_by_mazen/add_comment_in_news_sction/Add_Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Scenarios_by_mazen/wish_list/Wish_List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SocialMedia/Social.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,46 +23,170 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "VOL1TZ1"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;VOL1TZ1&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/VOL1TZ1/NopCommerce-ShaftEngine.git",
-    "accountId": "d56ef2f2-bd50-4f0a-a68f-82e0e05cca98"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VOL1TZ1/NopCommerce-ShaftEngine.git&quot;,
+    &quot;accountId&quot;: &quot;7aecb94f-9d55-449f-9b45-05fbbe66baab&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2gEvGtWuIKSLAl8axLShImdtnS6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Elmaadawy/IdeaProjects/NopCommerceShaft",
-    "onboarding.tips.debug.path": "C:/Users/Elmaadawy/IdeaProjects/NopCommerceShaft/src/main/java/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.Add_Comment.addComment.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Social_Polls_Scenario.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Social_Polls_Scenario.icons_checking.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Social_Polls_Scenario.icons_polls_checking.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Social_Polls_Scenario.polls_checking.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Social_Polls_Scenario.runThisFirst.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Wish_List.check_wish_list.executor&quot;: &quot;Run&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;SocialMedia&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Testing-Projects/sprints/automation selenium/final_project_using_shaft/coding&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Elmaadawy/IdeaProjects/NopCommerceShaft/src/main/java/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Elmaadawy\IdeaProjects\NopCommerceShaft" />
     </key>
+  </component>
+  <component name="RunManager" selected="TestNG.Social_Polls_Scenario.polls_checking">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Add_Comment.addComment" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scenarios_by_mazen.add_comment_in_news_sction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Scenarios_by_mazen.add_comment_in_news_sction" />
+      <option name="MAIN_CLASS_NAME" value="Scenarios_by_mazen.add_comment_in_news_sction.Add_Comment" />
+      <option name="METHOD_NAME" value="addComment" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Social_Polls_Scenario" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scenarios_by_mazen.socialMedia_communityPolls_scenario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Scenarios_by_mazen.socialMedia_communityPolls_scenario" />
+      <option name="MAIN_CLASS_NAME" value="Scenarios_by_mazen.socialMedia_communityPolls_scenario.Social_Polls_Scenario" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Social_Polls_Scenario.icons_checking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scenarios_by_mazen.socialMedia_communityPolls_scenario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Scenarios_by_mazen.socialMedia_communityPolls_scenario" />
+      <option name="MAIN_CLASS_NAME" value="Scenarios_by_mazen.socialMedia_communityPolls_scenario.Social_Polls_Scenario" />
+      <option name="METHOD_NAME" value="icons_checking" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Social_Polls_Scenario.polls_checking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scenarios_by_mazen.socialMedia_communityPolls_scenario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Scenarios_by_mazen.socialMedia_communityPolls_scenario" />
+      <option name="MAIN_CLASS_NAME" value="Scenarios_by_mazen.socialMedia_communityPolls_scenario.Social_Polls_Scenario" />
+      <option name="METHOD_NAME" value="polls_checking" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Wish_List.check_wish_list" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scenarios_by_mazen.wish_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Scenarios_by_mazen.wish_list" />
+      <option name="MAIN_CLASS_NAME" value="Scenarios_by_mazen.wish_list.Wish_List" />
+      <option name="METHOD_NAME" value="check_wish_list" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Social_Polls_Scenario.polls_checking" />
+        <item itemvalue="TestNG.Add_Comment.addComment" />
+        <item itemvalue="TestNG.Social_Polls_Scenario" />
+        <item itemvalue="TestNG.Social_Polls_Scenario.icons_checking" />
+        <item itemvalue="TestNG.Wish_List.check_wish_list" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
