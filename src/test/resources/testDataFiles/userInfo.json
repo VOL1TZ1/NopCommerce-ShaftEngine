@@ -1,12 +1,16 @@
-{
-  "First_Name" : "Mohamed",
-  "Last_Name" : "El-Taher",
-  "Email" : "johnbutler2@gmail.com",
-  "Company" :  "Sprints",
+{"First_Name":"John",
+ "Last_Name":"Butler",
+ "Gender":"Male",
+ "Email":"darell.schoen@example.com",
+ "DoB_Day":20,
+ "DoB_Month":4,
+ "DoB_Year":1990,
+ "Company":"Sprints",
+ "Password":"123456",
   "City" : "Cairo",
   "Address1" : "Mokattam",
   "Address2" : "9Street",
   "ZipCode" : "11571",
   "PhoneNumber" : "01110973351",
-  "FaxNumber" : "753951"
-}
+  "FaxNumber" : "753951"}
+

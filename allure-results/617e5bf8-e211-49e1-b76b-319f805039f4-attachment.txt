@@ -1,0 +1,34 @@
+
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                                              Test Method: 'Login_Register.LoginScenario.loginUser'                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 14:52:09.0912 PM
+[ReportManager] Click "Log in". @10-05-2024 14:52:10.0966 PM
+[ReportManager] Get text from "Email:". @10-05-2024 14:52:11.0115 PM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 14:52:11.0190 PM
+[ReportManager] Type "johnbutler13@gmail.com" into "Email:". @10-05-2024 14:52:11.0240 PM
+[ReportManager] Attempting to getAttribute "value" from elementLocator "By.name: Email". @10-05-2024 14:52:11.0276 PM
+[ReportManager] Expected "johnbutler13@gmail.com", and actual "johnbutler13@gmail.com" @10-05-2024 14:52:11.0312 PM
+[ReportManager] Successfully created attachment 'Screenshot - Assert_14-52-11-706_10052024' @10-05-2024 14:52:11.0708 PM
+[ReportManager] Assertion passed @10-05-2024 14:52:11.0711 PM
+[ReportManager] Get text from "Password:". @10-05-2024 14:52:11.0800 PM
+[ReportManager] Text cleared Using Native Clear @10-05-2024 14:52:11.0873 PM
+[ReportManager] Type "123456" into "Password:". @10-05-2024 14:52:11.0920 PM
+[ReportManager] Attempting to getAttribute "value" from elementLocator "By.name: Password". @10-05-2024 14:52:11.0954 PM
+[ReportManager] Expected "123456", and actual "123456" @10-05-2024 14:52:11.0990 PM
+[ReportManager] Successfully created attachment 'Screenshot - Assert_14-52-12-318_10052024' @10-05-2024 14:52:12.0320 PM
+[ReportManager] Assertion passed @10-05-2024 14:52:12.0321 PM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 14:52:12.0476 PM
+[ReportManager] Click "LOG IN". @10-05-2024 14:52:13.0187 PM
+[ReportManager] Expected "true", and actual "true" @10-05-2024 14:52:13.0271 PM
+[ReportManager] Successfully created attachment 'Screenshot - Assert_14-52-14-215_10052024' @10-05-2024 14:52:14.0223 PM
+[ReportManager] Assertion passed @10-05-2024 14:52:14.0224 PM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 14:52:14.0386 PM
+[ReportManager] Click "My account". @10-05-2024 14:52:14.0752 PM
+[ReportManager] Expected "johnbutler13@gmail.com", and actual "johnbutler13@gmail.com" @10-05-2024 14:52:14.0866 PM
+[ReportManager] Successfully created attachment 'Screenshot - Verify_14-52-15-236_10052024' @10-05-2024 14:52:15.0238 PM
+[ReportManager] Verification passed @10-05-2024 14:52:15.0238 PM
+[ReportManager] Moved the mouse to the middle of the element. @10-05-2024 14:52:15.0381 PM
+[ReportManager] Click "Log out". @10-05-2024 14:52:16.0032 PM
