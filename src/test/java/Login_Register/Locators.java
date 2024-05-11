@@ -34,4 +34,5 @@ public class Locators {
      * **/
     static By saveButton = By.id("save-info-button");
     static By validationError = By.className("validation-summary-errors");
+    static By closeNotification = By.cssSelector("span[class=close]");
 }

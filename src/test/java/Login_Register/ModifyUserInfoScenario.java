@@ -1,5 +1,6 @@
 package Login_Register;
 
+import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -12,6 +13,8 @@ public class ModifyUserInfoScenario {
     SHAFT.GUI.WebDriver driver;
     SHAFT.TestData.JSON userInfo;
     Form form;
+    Faker fakerObject;
+    String newEmail;
     String siteURL = "https://demo.nopcommerce.com/";
     String siteTitle = "nopCommerce demo store";
     @Test
@@ -29,9 +32,11 @@ public class ModifyUserInfoScenario {
         // Click on My account
         driver.element().click(myAccount);
         // Change email to new email
-        form.writeToFieldOnly(userInfo.getTestData("New_Email"), emailField);
+        form.writeToFieldOnly(newEmail, emailField);
         // Click on save
         driver.element().click(saveButton);
+        // Close success notification
+        driver.element().click(closeNotification);
         // Click on logout
         driver.element().click(logoutLink);
         // Login again using old mail
@@ -42,13 +47,13 @@ public class ModifyUserInfoScenario {
         // Check for the error message
         driver.assertThat().element(validationError).exists().perform();
         // Login again using new mail
-        form.writeToFieldOnly(userInfo.getTestData("New_Email"), emailField);
+        form.writeToFieldOnly(newEmail, emailField);
         form.writeToFieldOnly(userInfo.getTestData("Password"), passwordField);
         driver.element().click(loginButton);
         // Click on My account
         driver.element().click(myAccount);
         // Validate the email is the same as the one entered to login
-        form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("Email"), emailField);
+        form.checkCriticalFieldHasTheSameValueAs(newEmail, emailField);
         // Click on the logout link
         driver.element().click(logoutLink);
     }
@@ -60,6 +65,10 @@ public class ModifyUserInfoScenario {
         driver = new SHAFT.GUI.WebDriver();
         // Create a form object to be used to fill out form fields
         form = new Form(driver);
+        // Create a faker object
+        fakerObject = new Faker();
+        // Generate a random email
+        newEmail = fakerObject.internet().safeEmailAddress();
         // Go to the website
         driver.browser().navigateToURL(siteURL);
         // To ensure that the site loaded and there is no problem in the connection
@@ -69,6 +78,7 @@ public class ModifyUserInfoScenario {
     @AfterClass
     public void runThisLast(){
         driver.quit();
+        JsonFileModifier.modifyValue("testDataFiles/userInfo.json", "Email", newEmail);
         SHAFT.Properties.reporting.openAllureReportAfterExecution();
     }
 }
