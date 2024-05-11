@@ -47,12 +47,6 @@ public class Add_Comment {
         //soft assertion
         driver.verifyThat().element(verifyMsgAddedComment).text().isEqualTo(expectedRes).perform();
         //Assert.assertTrue(expectedRes.contains(actualRes));
-
-
-
-
-
-
     }
 
 
@@ -69,7 +63,6 @@ public class Add_Comment {
         driver.browser().navigateToURL(siteUrl);
         //to ensure the site loaded is no problem
         driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
-
     }
     @AfterMethod
     public void runThisLast(){

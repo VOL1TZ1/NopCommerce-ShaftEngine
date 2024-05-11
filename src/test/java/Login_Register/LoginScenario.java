@@ -12,7 +12,7 @@ public class LoginScenario {
     Form form;
     String siteURL = "https://demo.nopcommerce.com/";
     String siteTitle = "nopCommerce demo store";
-    @Test
+    @Test(priority = 1)
     public void loginUser(){
         // Click on the login link
         driver.element().click(loginLink);

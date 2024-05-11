@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smokeSuite">
+    <test name="Smoke" preserve-order="true">
+        <classes>
+            <class name="Login_Register.registerUserScenario"/>
+            <class name="Login_Register.LoginScenario"/>
+            <class name="Navigate.NavigateToCategory"/>
+            <class name="Scenarios_by_mazen.socialMedia_communityPolls_scenario.Social_Polls_Scenario"/>
+        </classes>
+    </test>
+</suite>

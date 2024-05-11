@@ -2,6 +2,7 @@ package Login_Register;
 
 import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
+import io.qameta.allure.Step;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,7 +18,7 @@ public class ModifyUserInfoScenario {
     String newEmail;
     String siteURL = "https://demo.nopcommerce.com/";
     String siteTitle = "nopCommerce demo store";
-    @Test
+    @Test(priority = 2)
     public void modifyUserEmail(){
         // Click on the login link
         driver.element().click(loginLink);

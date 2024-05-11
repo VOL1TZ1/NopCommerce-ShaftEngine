@@ -26,8 +26,7 @@ public class Social_Polls_Scenario {
      By voteButton = By.id("vote-poll-1");
     By elementLocator = By.id("poll-block-1"); //to scroll
     By elementLocatorIcons = By.cssSelector("div[class=\"social\"]");//to scroll
-
-    @Test(priority = 0)
+    @Test(priority = 3)
     public void icons_checking()  {
 
         //check facebook icon is working
@@ -65,7 +64,7 @@ public class Social_Polls_Scenario {
 
     }
 
-    @Test(priority = 1)
+    @Test(priority = 4)
     public void polls_checking()  {
 //        driver.element().scrollToElement(elementLocator);
 //        // driver.element().type(poll1,testData.getTestData("DO_YOU_LIKE_NOPCOMMERCE?")).click(poll1);
