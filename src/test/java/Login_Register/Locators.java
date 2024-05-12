@@ -44,7 +44,23 @@ public class Locators {
     public static By TotalPrice = By.className("product-subtotal");
     public static By EmptyShoppingCart = By.xpath("//div[contains(text(), 'Your Shopping Cart is empty!')]");
 
+    /**
+     * Navigate (NavigateBySearch)
+     * **/
+    public static By searchBox= By.id("small-searchterms");
+    public static By searchButton= By.xpath("//*[@id=\"small-search-box-form\"]/button");
+    public static By item=By.linkText("Apple MacBook Pro 13-inch");
 
+    /**
+     * Navigate (NavigateToBanner)
+     * **/
+    public static By bannerImage= By.className("nivo-main-image");
+
+    /**
+     * Navigate (NavigateToCategory)
+     * **/
+    public static By desktopSub = By.xpath("//*[@id=\"main\"]/div/div[3]/div/div[2]/div[1]/div/div[1]/div");
+    public static By itemCat = By.xpath("//*[@id=\"main\"]/div/div[3]/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/h2/a");
     /**
      * Registration Scenario Locators
      * **/

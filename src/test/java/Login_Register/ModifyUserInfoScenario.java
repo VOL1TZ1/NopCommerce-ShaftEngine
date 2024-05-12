@@ -6,7 +6,6 @@ import io.qameta.allure.Step;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import static Login_Register.Locators.*;
 import static Login_Register.Locators.myAccount;
 
