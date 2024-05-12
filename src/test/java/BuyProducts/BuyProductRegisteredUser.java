@@ -106,6 +106,7 @@ public class BuyProductRegisteredUser extends Hooks {
         //Confirm Order
         driver.element().click(ConfirmOrder);
 
+
         //Verify That the order has been added successfully
         driver.verifyThat().element(SuccessMessage).exists().perform();
         driver.element().click(Finish);
