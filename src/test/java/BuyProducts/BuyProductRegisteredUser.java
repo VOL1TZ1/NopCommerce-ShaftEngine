@@ -4,8 +4,6 @@ import Login_Register.Form;
 import Login_Register.Hooks;
 import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
-
-import org.openqa.selenium.Keys;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import static Login_Register.Locators.*;

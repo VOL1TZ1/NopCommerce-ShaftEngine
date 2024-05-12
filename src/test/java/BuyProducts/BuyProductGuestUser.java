@@ -3,7 +3,6 @@ package BuyProducts;
 import Login_Register.Hooks;
 import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import static Login_Register.Locators.*;
@@ -48,7 +47,7 @@ public class BuyProductGuestUser extends Hooks {
     //Select the country
     driver.element().click(CountryButton);
     driver.element().click(SelectCountry);
-
+    //Complete the form
     driver.element().type(City, userInfo.getTestData("City"));
     driver.element().type(Address1, userInfo.getTestData("Address1"));
     driver.element().type(Address2, userInfo.getTestData("Address2"));
@@ -69,4 +68,5 @@ public class BuyProductGuestUser extends Hooks {
     driver.verifyThat().element(SuccessMessage).exists().perform();
     driver.element().click(Finish);
     }
+
 }
