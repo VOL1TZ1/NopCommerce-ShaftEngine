@@ -1,11 +1,14 @@
 package Login_Register;
 
 
+import com.shaft.driver.SHAFT;
 import org.openqa.selenium.By;
 import com.shaft.driver.SHAFT.GUI.WebDriver;
 import org.openqa.selenium.Keys;
 
-import static java.lang.StringTemplate.STR;
+import java.util.Objects;
+
+import static Login_Register.Locators.*;
 
 public class Form {
     WebDriver driver;
@@ -14,13 +17,8 @@ public class Form {
     }
     public void writeToFieldAndPressEnter(String word, By locator){
         // Perform the action
-        if(!driver.element().getText(locator).isEmpty()){
-            driver.element().clear(locator).type(locator,word)
-                    .keyPress(locator, Keys.ENTER);
-        } else {
-            driver.element().type(locator,word)
-                    .keyPress(locator, Keys.ENTER);
-        }
+        driver.element().type(locator,word)
+                .keyPress(locator, Keys.ENTER);
         // Validate the action result
         driver.assertThat().element(locator)
                 .attribute("value").isEqualTo(word).perform();
@@ -28,22 +26,18 @@ public class Form {
 
     public void writeToFieldOnly(String word, By locator){
         // Perform the action
-        if(!driver.element().getText(locator).isEmpty()){
-            driver.element().clear(locator).type(locator,word);
-        } else {
-            driver.element().type(locator,word);
-        }
+        driver.element().type(locator,word);
         // Validate the action result
         driver.assertThat().element(locator)
                 .attribute("value").isEqualTo(word).perform();
     }
 
     public void checkNonCriticalFieldHasTheSameValueAs(String word, By locator){
-        driver.assertThat().element(locator).text()
+        driver.verifyThat().element(locator).text()
                 .isEqualTo(word).perform();
     }
     public void checkCriticalFieldHasTheSameValueAs(String word, By locator){
-        driver.verifyThat().element(locator).text()
+        driver.assertThat().element(locator).text()
                 .isEqualTo(word).perform();
     }
     public void chooseFromList(String optionName, By locator){
@@ -52,5 +46,37 @@ public class Form {
         // Validate action result
         driver.assertThat().element(locator)
                 .attribute("value").isEqualTo(optionName).perform();
+    }
+    public void chooseGenderRadioButton(String gender, SHAFT.GUI.WebDriver driver){
+        if(Objects.equals(gender, "Male")){
+            driver.element().click(genderMale);
+        } else if (Objects.equals(gender, "Female")) {
+            driver.element().click(genderFemale);
+        } else {
+            SHAFT.Report.report("The gender entered is invalid!!");
+        }
+    }
+    public void chooseFromPoll(String choice, SHAFT.GUI.WebDriver driver){
+        switch(choice){
+            case "Excellent":
+                driver.element().scrollToElement(elementLocator);
+                driver.element().click(pollOptionExcellent);
+                break;
+            case "Good":
+                driver.element().scrollToElement(elementLocator);
+                driver.element().click(pollOptionGood);
+                break;
+            case "Poor":
+                driver.element().scrollToElement(elementLocator);
+                driver.element().click(pollOptionPoor);
+                break;
+            case "Very bad":
+                driver.element().scrollToElement(elementLocator);
+                driver.element().click(pollOptionVeryBad);
+                break;
+            default:
+                SHAFT.Report.report("Entered poll option is invalid");
+                break;
+        }
     }
 }

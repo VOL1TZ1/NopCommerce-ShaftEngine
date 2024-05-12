@@ -7,7 +7,7 @@
             <class name="Login_Register.LoginScenario"/>
             <class name="BuyProducts.BuyProductGuestUser"/>
             <class name="Navigate.NavigateToCategory"/>
-            <class name="Navigate.NavigateBySearch"></class>
+            <class name="Navigate.NavigateBySearch"/>
         </classes>
     </test>
 </suite>

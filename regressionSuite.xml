@@ -12,9 +12,9 @@
             <class name="Navigate.NavigateBySearch"/>
             <class name="Navigate.NavigateToBanner"/>
             <class name="Navigate.NavigateToCategory"/>
-            <class name="Scenarios_by_mazen.add_comment_in_news_sction.Add_Comment"/>
-            <class name="Scenarios_by_mazen.socialMedia_communityPolls_scenario.Social_Polls_Scenario"/>
-            <class name="Scenarios_by_mazen.wish_list.Wish_List"/>
+            <class name="SocialMedia_CommentSection.Add_Comment"/>
+            <class name="SocialMedia_CommentSection.Social_Polls_Scenario"/>
+            <class name="SocialMedia_CommentSection.Wish_List"/>
         </classes>
     </test>
 </suite>

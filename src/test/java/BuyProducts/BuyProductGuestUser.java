@@ -1,31 +1,31 @@
 package BuyProducts;
 
+import Login_Register.Hooks;
 import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import static Login_Register.Locators.*;
 
-public class BuyProductGuestUser {
+public class BuyProductGuestUser extends Hooks {
 
     // Declare class variables
-    SHAFT.GUI.WebDriver driver;
     SHAFT.TestData.JSON userInfo;
-    Faker FakerObject;
     String EmailGen;
-    String siteURL = "https://demo.nopcommerce.com/";
-    String siteTitle = "nopCommerce demo store";
 
-
-
-
+    // Method to run before each test method
+    @BeforeMethod
+    public void Initializations(){
+        // Extract user information
+        userInfo = new SHAFT.TestData.JSON("userInfo.json");
+        Faker FakerObject = new Faker();
+        EmailGen = FakerObject.internet().safeEmailAddress();
+    }
 
     // Test method to perform the purchase as a guest
     @Test
     public void BuyProductGuest(){
-
     //Click on Elements to navigate and add products to cart
     driver.element().click(Computers);
     driver.element().click(Desktops);
@@ -68,30 +68,5 @@ public class BuyProductGuestUser {
     //verify that the order has been successfully processed
     driver.verifyThat().element(SuccessMessage).exists().perform();
     driver.element().click(Finish);
-
-
-    }
-
-    // Method to run before each test method
-    @BeforeMethod
-    public void RunThisFirst(){
-        // Extract user information
-        userInfo = new SHAFT.TestData.JSON("userInfo.json");
-        // Create new driver object
-        driver = new SHAFT.GUI.WebDriver();
-        FakerObject = new Faker();
-        EmailGen = FakerObject.internet().safeEmailAddress();
-        // Go to the website
-        driver.browser().navigateToURL(siteURL);
-        // To ensure that the site loaded and there is no problem in the connection
-        driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
-    }
-    // Method to run after each test method
-    @AfterMethod
-    public void RunThisLast(){
-        // Quit the WebDriver instance
-        driver.quit();
-        // Open Allure report for reporting
-        SHAFT.Properties.reporting.openAllureReportAfterExecution();
     }
 }

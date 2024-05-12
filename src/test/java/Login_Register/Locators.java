@@ -9,14 +9,12 @@ public class Locators {
      * **/
     static By loginLink = By.cssSelector("a[class = ico-login]");
     static By loginButton = By.xpath("//*[contains(@class, 'login-button')]");
-
     /**
      * Modify User Info Scenario Locators
      * **/
     static By saveButton = By.id("save-info-button");
     static By validationError = By.className("validation-summary-errors");
     static By closeNotification = By.cssSelector("span[class=close]");
-
     /**
      * Buy Product (Add To Card)
      * **/
@@ -25,13 +23,11 @@ public class Locators {
     public static By AddToCart = By.xpath("(//button[contains(@class, 'product-box-add-to-cart-button')])[2]");
     public static By ShoppingCart = By.xpath("//span[@class='cart-label']");
     public static By ExpectedResult = By.xpath("//*[@id=\"shopping-cart-form\"]/div[1]/table/tbody/tr/td[3]/a");
-
     /**
      * Buy Product (Agree And Confirm Terms)
      * **/
     public static By AgreeTerms = By.id("termsofservice");
     public static By CheckOut = By.id("checkout");
-
     /**
      * Buy Product (ModifyQuantity)
      * **/
@@ -40,27 +36,55 @@ public class Locators {
 
     public static By RemoveItem = By.className("remove-btn");
     public static By SubTotalPriceList = By.xpath("(//span[@class='value-summary'])[1]");
-    public static String SubTotalCartPrice;
     public static By TotalPrice = By.className("product-subtotal");
     public static By EmptyShoppingCart = By.xpath("//div[contains(text(), 'Your Shopping Cart is empty!')]");
-
     /**
      * Navigate (NavigateBySearch)
      * **/
     public static By searchBox= By.id("small-searchterms");
     public static By searchButton= By.xpath("//*[@id=\"small-search-box-form\"]/button");
     public static By item=By.linkText("Apple MacBook Pro 13-inch");
-
     /**
      * Navigate (NavigateToBanner)
      * **/
     public static By bannerImage= By.className("nivo-main-image");
-
     /**
      * Navigate (NavigateToCategory)
      * **/
     public static By desktopSub = By.xpath("//*[@id=\"main\"]/div/div[3]/div/div[2]/div[1]/div/div[1]/div");
     public static By itemCat = By.xpath("//*[@id=\"main\"]/div/div[3]/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/h2/a");
+    /**
+     * SocialMedia_CommentSection (Add_Comment)
+     * **/
+    public static By locateNewSection = By.cssSelector("div[class=\"news-list-homepage\"]");
+    public static By buttonDetails = By.cssSelector("a[href=\"/new-online-store-is-open\"][class=\"read-more\"]");
+    public static By locateCommentFields = By.cssSelector("form[action=\"/News/NewsCommentAdd?newsitemid=3\"]");
+    public static By titleField = By.id("AddNewComment_CommentTitle");
+    public static By bodyField = By.id("AddNewComment_CommentText");
+    public static By newCommentButton = By.cssSelector("button[name=\"add-comment\"]");
+    public static By verifyMsgAddedComment = By.cssSelector("div[class=\"notifications\"]");
+    /**
+     * SocialMedia_CommentSection (Social_Polls_Scenario)
+     * **/
+    public static By pollOptionExcellent = By.cssSelector("li[class=\"answer\"] input[id=\"pollanswers-1\"]");
+    public static By pollOptionGood = By.id("[id=\"pollanswers-2\"]");
+    public static By pollOptionPoor = By.id("[id=\"pollanswers-3\"]");
+    public static By pollOptionVeryBad = By.id("[id=\"pollanswers-4\"]");
+    public static By faceBookIcon = By.cssSelector("a[href=\"http://www.facebook.com/nopCommerce\"]");
+    public static By twitterIcon = By.cssSelector("a[href=\"https://twitter.com/nopCommerce\"]");
+    public static By youTubeIcon = By.cssSelector("a[href=\"http://www.youtube.com/user/nopCommerce\"]");
+    public static By elementLocator = By.id("poll-block-1"); //to scroll
+    public static By elementLocatorIcons = By.cssSelector("div[class=\"social\"]");//to scroll
+    /**
+     * SocialMedia_CommentSection (Wish_List)
+     * **/
+    public static By scrollDown = By.cssSelector("div[class=\"product-grid home-page-product-grid\"]");     //to scroll
+    public static By scrollUp =By.cssSelector("div[class=\"header-upper\"]");
+    public static By wishListIconInItem=By.cssSelector("div[data-productid=\"18\"] button[title=\"Add to wishlist\"]");
+    public static By wishListButton = By.cssSelector("a[class=\"ico-wishlist\"]");
+    public static By titleForItem = By.cssSelector("div[data-productid=\"18\"] div[class=\"details\"]");
+    public static By barClose = By.cssSelector("span[title=\"Close\"]");
+    public static By itemTitle = By.cssSelector("a[href=\"/htc-one-m8-android-l-50-lollipop\"][class=\"product-name\"]");
     /**
      * Registration Scenario Locators
      * **/
@@ -81,9 +105,9 @@ public class Locators {
     public static By myAccount = By.cssSelector("a[class = ico-account]");
     public static By logoutLink = By.cssSelector("a[class = ico-logout]");
     public static By successMessage = By.xpath("//*[contains(text(), 'registration completed')]");
-/**
- * Buy Product (As A Guest)
- * **/
+    /**
+     * Buy Product (As A Guest)
+     * **/
     public static By CheckOutGuest = By.xpath("//button[contains(@class, 'checkout-as-guest-button')]");
     public static By FirstName = By.id("BillingNewAddress_FirstName");
     public static By LastName = By.id("BillingNewAddress_LastName");
@@ -113,6 +137,4 @@ public class Locators {
     public static By ConfirmOrder = By.xpath("//button[contains(@class, 'confirm-order-next-step-button')]");
     public static By SuccessMessage = By.xpath("//strong[contains(text(), 'Your order has been successfully processed!')]");
     public static By Finish = By.xpath("//button[contains(@class, 'order-completed-continue-button')]");
-
-
 }

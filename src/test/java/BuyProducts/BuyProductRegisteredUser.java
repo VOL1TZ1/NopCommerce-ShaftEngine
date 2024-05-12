@@ -1,28 +1,33 @@
 package BuyProducts;
 
+import Login_Register.Form;
+import Login_Register.Hooks;
 import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
 
 import org.openqa.selenium.Keys;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import java.util.Objects;
 import static Login_Register.Locators.*;
 
 
-public class BuyProductRegisteredUser {
+public class BuyProductRegisteredUser extends Hooks {
 
     // Declare class variables
-    SHAFT.GUI.WebDriver driver;
     SHAFT.TestData.JSON userInfo;
-    String siteURL = "https://demo.nopcommerce.com/";
-    String siteTitle = "nopCommerce demo store";
+    SHAFT.TestData.JSON creditCardInfo;
     String EmailGen;
-    Faker FakerObject;
-
-
-
+    Form form;
+    @BeforeMethod
+    public void Initializations(){
+        // Extract user information
+        userInfo = new SHAFT.TestData.JSON("userInfo.json");
+        creditCardInfo = new SHAFT.TestData.JSON("fakeCreditCardInfo.json");
+        form = new Form(driver);
+        Faker FakerObject = new Faker();
+        EmailGen = FakerObject.internet().safeEmailAddress();
+    }
+    
     // Test method to perform the purchase as a RegisteredUser With Credit Card As Payment Method
     @Test
     public void BuyProductGuest() {
@@ -39,53 +44,41 @@ public class BuyProductRegisteredUser {
         //Click on Register Button
         driver.element().click(registerLink);
         //After redirect to the Register Page fill the information needed
-        if (Objects.equals(userInfo.getTestData("Gender"), "Male")) {
-            driver.element().click(genderMale);
-        } else if (Objects.equals(userInfo.getTestData("Gender"), "Female")) {
-            driver.element().click(genderFemale);
-        } else {
-            SHAFT.Report.report("The gender field in the userInfo.json contains invalid data!!");
-        }
+        form.chooseGenderRadioButton(userInfo.getTestData("Gender"), driver);
         // Fill in the first name
-        driver.element().type(firstNameField, userInfo.getTestData("First_NameReg"))
-                .keyPress(firstNameField, Keys.ENTER);
+        form.writeToFieldOnly(userInfo.getTestData("First_Name"),firstNameField);
         // Fill in the Last name
-        driver.element().type(lastNameField, userInfo.getTestData("Last_NameReg"))
-                .keyPress(lastNameField, Keys.ENTER);
+        form.writeToFieldOnly(userInfo.getTestData("Last_Name"),lastNameField);
         // Fill in the date of birth
-        driver.element().select(dobDayField, userInfo.getTestData("DoB_Day"))
-                .keyPress(dobDayField, Keys.ENTER);
-        driver.element().select(dobMonthField, userInfo.getTestData("DoB_Month"))
-                .keyPress(dobMonthField, Keys.ENTER);
-        driver.element().select(dobYearField, userInfo.getTestData("DoB_Year"))
-                .keyPress(dobYearField, Keys.ENTER);
-
+        form.chooseFromList(userInfo.getTestData("DoB_Day"), dobDayField);
+        form.chooseFromList(userInfo.getTestData("DoB_Month"), dobMonthField);
+        form.chooseFromList(userInfo.getTestData("DoB_Year"), dobYearField);
         // Fill in the email
-        driver.element().type(emailField, EmailGen);
-
+        form.writeToFieldOnly(EmailGen,emailField);
         // Fill in the Company name
-        driver.element().type(companyNameField, userInfo.getTestData("CompanyReg"));
-
+        form.writeToFieldOnly(userInfo.getTestData("Company"),companyNameField);
         // Fill in the password
-        driver.element().type(passwordField, userInfo.getTestData("Password"));
-
+        form.writeToFieldOnly(userInfo.getTestData("Password"),passwordField);
         // Fill in the confirmation password
-        driver.element().type(confirmPasswordField, userInfo.getTestData("Password"));
-
-        //Click on the register button and verify that the user has been added successfully
+        form.writeToFieldOnly(userInfo.getTestData("Password"),confirmPasswordField);
+        // Press the save button
         driver.element().click(registerButton);
-        driver.verifyThat().element(successMessage).exists().perform();
+        // Check that the success message appears
+        driver.assertThat().element(successMessage).exists().perform();
+        // Press the continue button
         driver.element().click(continueButton);
 
         //Proceed to the CheckOut and agree on terms
         driver.element().click(AgreeTerms);
         driver.element().click(CheckOut);
 
-        //Fill the information needed for the checkout
-        driver.element().type(FirstName, userInfo.getTestData("First_Name"));
-        driver.element().type(LastName, userInfo.getTestData("Last_Name"));
-        driver.element().type(Email, EmailGen);
-        driver.element().type(Company, userInfo.getTestData("Company"));
+        //Validate the information added during registration
+        form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("First_Name"), FirstName);
+        form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("Last_Name"), LastName);
+        form.checkCriticalFieldHasTheSameValueAs(EmailGen, Email);
+        form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("Company"), Company);
+
+        //Fill the rest of the information needed for the checkout
         driver.element().click(CountryButton);
         driver.element().click(SelectCountry);
         driver.element().type(City, userInfo.getTestData("City"));
@@ -105,11 +98,11 @@ public class BuyProductRegisteredUser {
         driver.element().click(ContinuePayment);
 
         //Add CreditCard Information
-        driver.element().type(CardHolderName, userInfo.getTestData("CardHolderName"));
-        driver.element().type(CardNumber, userInfo.getTestData("CardNumber"));
-        driver.element().select(ExpireMonth, userInfo.getTestData("Exp_Month"));
-        driver.element().select(ExpireYear, userInfo.getTestData("Exp_Year"));
-        driver.element().type(CardCode, userInfo.getTestData("CardCode"));
+        driver.element().type(CardHolderName, creditCardInfo.getTestData("CardHolderName"));
+        driver.element().type(CardNumber, creditCardInfo.getTestData("CardNumber"));
+        driver.element().select(ExpireMonth, creditCardInfo.getTestData("Exp_Month"));
+        driver.element().select(ExpireYear, creditCardInfo.getTestData("Exp_Year"));
+        driver.element().type(CardCode, creditCardInfo.getTestData("CardCode"));
         driver.element().click(ContinueInformation);
 
         //Confirm Order
@@ -119,40 +112,5 @@ public class BuyProductRegisteredUser {
         driver.verifyThat().element(SuccessMessage).exists().perform();
         driver.element().click(Finish);
 
-    }
-
-
-    // Method to run before each test method
-
-
-    @BeforeMethod
-    public void RunThisFirst(){
-
-        // Extract user information
-        userInfo = new SHAFT.TestData.JSON("userInfo2.json");
-
-        // Create new driver object
-        driver = new SHAFT.GUI.WebDriver();
-        FakerObject = new Faker();
-        EmailGen = FakerObject.internet().safeEmailAddress();
-
-        // Go to the website
-        driver.browser().navigateToURL(siteURL);
-
-        // To ensure that the site loaded and there is no problem in the connection
-        driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
-
-    }
-
-    // Method to run after each test method
-
-    @AfterMethod
-    public void RunThisLast(){
-
-        // Quit the WebDriver instance
-        driver.quit();
-
-        // Open Allure report for reporting
-        SHAFT.Properties.reporting.openAllureReportAfterExecution();
     }
 }
