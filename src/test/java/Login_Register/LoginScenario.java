@@ -15,25 +15,25 @@ public class LoginScenario extends Hooks{
         // Extract user information
         userInfo = new SHAFT.TestData.JSON("userInfo.json");
         // Create a form object to be used to fill out form fields
-        form = new Form(Hooks.driver);
+        form = new Form(driver);
     }
     @Test(priority = 1)
     public void loginUser(){
         // Click on the login link
-        Hooks.driver.element().click(loginLink);
+        driver.element().click(loginLink);
         // Fill in the email
         form.writeToFieldOnly(userInfo.getTestData("Email"), emailField);
         // Fill in the password
         form.writeToFieldOnly(userInfo.getTestData("Password"), passwordField);
         // Click on login button
-        Hooks.driver.element().click(loginButton);
+        driver.element().click(loginButton);
         // Validate that user is logged in
-        Hooks.driver.assertThat().element(logoutLink).exists().perform();
+        driver.assertThat().element(logoutLink).exists().perform();
         // Click on My account
-        Hooks.driver.element().click(myAccount);
+        driver.element().click(myAccount);
         // Validate the email is the same as the one entered to log in
         form.checkCriticalFieldHasTheSameValueAs(userInfo.getTestData("Email"), emailField);
         // Click on the logout link
-        Hooks.driver.element().click(logoutLink);
+        driver.element().click(logoutLink);
     }
 }

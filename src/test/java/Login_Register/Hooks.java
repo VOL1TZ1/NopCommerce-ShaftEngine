@@ -5,9 +5,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class Hooks {
-    public static SHAFT.GUI.WebDriver driver;
+    public SHAFT.GUI.WebDriver driver;
     @BeforeClass
-    public static SHAFT.GUI.WebDriver startDriverSession(){
+    public SHAFT.GUI.WebDriver startDriverSession(){
         // Initializations
         String siteURL = "https://demo.nopcommerce.com/";
         String siteTitle = "nopCommerce demo store";
@@ -20,7 +20,7 @@ public class Hooks {
         return driver;
     }
     @AfterClass
-    public static void EndDriverSession(){
+    public void EndDriverSession(){
         // Quit the WebDriver instance
         driver.quit();
     }
