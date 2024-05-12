@@ -25,6 +25,7 @@ public class NavigateBySearch {
       // To ensure that the site is loaded and there is no problem in the connection
       driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
    }
+
    @Test
    public void itemSearch(){
 
