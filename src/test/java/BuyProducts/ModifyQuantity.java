@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import static Login_Register.Locators.*;
 
 public class ModifyQuantity {
 
@@ -12,19 +13,6 @@ public class ModifyQuantity {
     SHAFT.GUI.WebDriver driver;
     String siteURL = "https://demo.nopcommerce.com/";
     String siteTitle = "nopCommerce demo store";
-
-    // Declare locators using By class for web elements
-    By Computers = By.xpath("(//a[@href='/computers'])[1]");
-    By Desktops = By.xpath("//img[@alt='Picture for category Desktops']");
-    By AddToCart = By.xpath("(//button[contains(@class, 'product-box-add-to-cart-button')])[2]");
-    By ShoppingCart = By.xpath("//span[@class='cart-label']");
-    By IncreaseItem = By.xpath("//div[contains(@class, 'quantity up')]");
-    By DecreaseItem = By.xpath("//div[contains(@class, 'quantity down')]");
-    By TotalPrice = By.className("product-subtotal");
-    By RemoveItem = By.className("remove-btn");
-    By SubTotalPriceList = By.xpath("(//span[@class='value-summary'])[1]");
-    String SubTotalCartPrice;
-    By EmptyShoppingCart = By.xpath("//div[contains(text(), 'Your Shopping Cart is empty!')]");
 
 
     // Test method to perform ModifyQuantity
@@ -55,6 +43,8 @@ public class ModifyQuantity {
 
 
 }
+
+
     // Method to run before each test method
     @BeforeMethod
     public void RunThisFirst(){
