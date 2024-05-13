@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 public class Hooks {
     public SHAFT.GUI.WebDriver driver;
     @BeforeClass
-    public SHAFT.GUI.WebDriver startDriverSession(){
+    public void startDriverSession(){
         // Initializations
         String siteURL = "https://demo.nopcommerce.com/";
         String siteTitle = "nopCommerce demo store";
@@ -17,7 +17,6 @@ public class Hooks {
         driver.browser().navigateToURL(siteURL);
         // To ensure that the site loaded and there is no problem in the connection
         driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
-        return driver;
     }
     @AfterClass
     public void EndDriverSession(){
