@@ -1,10 +1,11 @@
 package BuyProducts;
-
 import Login_Register.Hooks;
 import org.testng.annotations.Test;
 import static Login_Register.Locators.*;
 
 public class ModifyQuantity extends Hooks {
+
+
     // Test method to perform ModifyQuantity
     @Test
     public void ModifyItem(){
