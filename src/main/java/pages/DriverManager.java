@@ -1,11 +1,12 @@
-package Login_Register;
+package pages;
 
 import com.shaft.driver.SHAFT;
+import coreElements.Element;
+import coreElements.Message;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import pages.DriverManager;
 
-public class Hooks {
+public class DriverManager {
     public static SHAFT.GUI.WebDriver driver;
     @BeforeClass
     public void startDriverSession(){
@@ -14,11 +15,12 @@ public class Hooks {
         String siteTitle = "nopCommerce demo store";
         // Create new driver object
         driver = new SHAFT.GUI.WebDriver();
+        Element.setDriver(driver);
+        Message.setDriver(driver);
         // Go to the website
         driver.browser().navigateToURL(siteURL);
         // To ensure that the site loaded and there is no problem in the connection
         driver.verifyThat().browser().title().isEqualTo(siteTitle).perform();
-        DriverManager.driver = driver;
     }
     @AfterClass
     public void EndDriverSession(){

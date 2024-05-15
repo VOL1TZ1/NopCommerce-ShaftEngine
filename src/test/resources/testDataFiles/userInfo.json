@@ -1,17 +1,1 @@
-{
-  "First_Name": "John",
-  "Last_Name": "Butler",
-  "Gender": "Male",
-  "Email": "lucius.beatty@example.com",
-  "DoB_Day": 20,
-  "DoB_Month": 4,
-  "DoB_Year": 1990,
-  "Company": "Sprints",
-  "Password": "123456",
-  "City": "Cairo",
-  "Address1": "Mokattam",
-  "Address2": "9Street",
-  "ZipCode": "11571",
-  "PhoneNumber": "01110973351",
-  "FaxNumber": "753951"
-}
+{"First_Name":"John","Last_Name":"Butler","Gender":"Male","Email":"slyvia.schowalter@example.com","DoB_Day":20,"DoB_Month":4,"DoB_Year":1990,"Company":"Sprints","Password":"123456","City":"Cairo","Address1":"Mokattam","Address2":"9Street","ZipCode":"11571","PhoneNumber":"01110973351","FaxNumber":"753951"}

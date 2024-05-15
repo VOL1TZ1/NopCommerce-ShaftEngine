@@ -39,7 +39,7 @@ public class BuyProductRegisteredUser extends Hooks {
         //Agree to terms and proceed to the checkout process
         driver.element().click(AgreeTerms);
         driver.element().click(CheckOut);
-        //Click on Register Button
+        //Click on Register coreElements.Button
         driver.element().click(registerLink);
         //After redirect to the Register Page fill the information needed
         form.chooseGenderRadioButton(userInfo.getTestData("Gender"), driver);

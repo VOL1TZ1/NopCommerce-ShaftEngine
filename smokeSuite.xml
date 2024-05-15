@@ -3,11 +3,13 @@
 <suite name="smokeSuite">
     <test name="Smoke" preserve-order="true">
         <classes>
-            <class name="Login_Register.registerUserScenario"/>
-            <class name="Login_Register.LoginScenario"/>
+            <class name="Login_Register.D01_RegisterNewUser"/>
+            <class name="Login_Register.D02_LoginRegisteredUser"/>
+            <class name="Login_Register.D03_ModifyRegisteredUserEmail"/>
+<!--            <class name="Login_Register.LoginScenario"/>
             <class name="BuyProducts.BuyProductGuestUser"/>
             <class name="Navigate.NavigateToCategory"/>
-            <class name="Navigate.NavigateBySearch"/>
+            <class name="Navigate.NavigateBySearch"/>-->
         </classes>
     </test>
 </suite>

@@ -3,7 +3,9 @@ package Login_Register;
 import com.github.javafaker.Faker;
 import com.shaft.driver.SHAFT;
 
+import coreElements.FormField;
 import org.testng.annotations.*;
+import pages.P01_Register;
 
 import java.util.Objects;
 
