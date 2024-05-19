@@ -5,7 +5,7 @@
   >[LinkedIN](https://www.linkedin.com/in/ahmed-nasr-122462109/) profile
 * Mazen Mohammed
   >[LinkedIN](https://www.linkedin.com/in/mazen-mohamed-26aa64173/) profile
-* Mohammed El Taher
+* Mohammed El-Taher
   >[LinkedIN](https://www.linkedin.com/in/mohamed-eltaher220/) profile
 * Mohamed Elmaadawy
   >[LinkedIN](https://www.linkedin.com/in/mohamedelmaadawy1/) profile
