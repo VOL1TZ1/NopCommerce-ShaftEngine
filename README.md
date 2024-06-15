@@ -1,4 +1,4 @@
-# Welcome to our humble ordering app:
+# Welcome to our humble app:
 ## Project Contributors:
 
 * Ahmed Nasr Abdul Aziz
