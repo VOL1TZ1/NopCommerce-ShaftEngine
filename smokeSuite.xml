@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smokeSuite">
+    <test name="Smoke" preserve-order="true">
+        <classes>
+            <class name="Login_Register.D01_RegisterNewUser"/>
+            <class name="Login_Register.D02_LoginRegisteredUser"/>
+            <class name="Login_Register.D03_ModifyRegisteredUserEmail"/>
+<!--            <class name="Login_Register.LoginScenario"/>
+            <class name="BuyProducts.BuyProductGuestUser"/>
+            <class name="Navigate.NavigateToCategory"/>
+            <class name="Navigate.NavigateBySearch"/>-->
+        </classes>
+    </test>
+</suite>

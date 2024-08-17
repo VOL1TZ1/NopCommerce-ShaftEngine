@@ -36,3 +36,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/allure-results
+/.idea
+/allure-results
+/.idea
+/execution-summary
